@@ -1,5 +1,5 @@
 ---
-description: How JACPOT turns low trading volume into explosive jackpot events
+description: How VORTEX turns low trading volume into explosive vortex events
 ---
 
 # Pressure Mode
@@ -8,7 +8,7 @@ description: How JACPOT turns low trading volume into explosive jackpot events
 
 Every tax-token project faces the same existential threat: **low trading volume**. When volume drops:
 - Tax revenue shrinks
-- Jackpot grows slowly
+- Vortex grows slowly
 - Users lose interest
 - Volume drops further
 - Death spiral
@@ -25,7 +25,7 @@ Pressure Mode activates automatically when:
 
 ### What Happens During Pressure Mode
 
-1. **Jackpot draws are PAUSED** — The conditional jackpot check is suspended
+1. **Vortex draws are PAUSED** — The conditional vortex check is suspended
 2. **Daily Small Wins continue** — 25 winners are still selected every day (if tickets are sold)
 3. **The pot keeps accumulating** — Tax revenue still flows in from every trade
 4. **A Pressure Gauge appears** on the UI — visual indicator showing the pot growing
@@ -40,7 +40,7 @@ Pressure Mode activates automatically when:
 ┌─────────────────────────────────────────┐
 │         🔥 PRESSURE MODE ACTIVE 🔥      │
 │                                         │
-│  Jackpot Pot: $127,450 USDC             │
+│  Vortex Pot: $127,450 USDC             │
 │                                         │
 │  ░░░░░░░░░░░░░░░████████  72%          │
 │                                         │
@@ -62,7 +62,7 @@ Pressure Mode activates automatically when:
 | **Daily Missions** | ✅ Active | Bonus missions added |
 | **Luck Staking** | ✅ Active | 3x Luck Shard earnings during RED tier |
 | **Streak System** | ✅ Active | Users maintain streaks |
-| **Jackpot Draw** | ❌ Paused | Pot accumulates for Mega Draw |
+| **Vortex Draw** | ❌ Paused | Pot accumulates for Mega Draw |
 | **No-Winner Distribution** | ❌ Paused | 100% stays in pot |
 
 ### Resolution: The Mega Draw
@@ -71,7 +71,7 @@ Pressure Mode ends in one of two ways:
 
 #### Option A: Volume Recovery
 - Daily volume returns above the threshold for 2 consecutive days
-- The next day's jackpot draw becomes a **Mega Draw** event
+- The next day's vortex draw becomes a **Mega Draw** event
 - The accumulated mega pot is distributed using the standard split:
   - 50% → Winner
   - 35% → Rollover
@@ -93,7 +93,7 @@ Day 4:   PRESSURE MODE ACTIVATES
          Pot: $15,000
          Drought Bonus: +$500/day
          Small Wins: 25 winners from ticket sales
-         Jackpot: PAUSED (pot accumulates)
+         Vortex: PAUSED (pot accumulates)
 
 Day 7:   Pot: $15,000 + $2,000 tax + $2,000 drought = $19,000
          Drought Bonus escalates: +$1,000/day
@@ -120,7 +120,7 @@ Day 13:  🏆 MEGA DRAW
 
 ### Why Pressure Mode Creates Hype
 
-| Traditional Project | JACPOT |
+| Traditional Project | VORTEX |
 | --- | --- |
 | Low volume → small rewards → users leave | Low volume → pot grows → anticipation builds |
 | Silence during slow periods | "The pot is at $30K and counting!" |

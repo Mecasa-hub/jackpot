@@ -1,12 +1,12 @@
 ---
-description: How to participate in JACPOT's daily draws
+description: How to participate in VORTEX's daily draws
 ---
 
 # Raffle Participation Guide
 
 ## Overview
 
-JACPOT runs a **two-tier daily draw system** — 25 guaranteed Small Win winners every day, plus a conditional Jackpot draw. This guide explains how to participate, maximize your odds, and claim your prizes.
+VORTEX runs a **two-tier daily draw system** — 25 guaranteed Small Win winners every day, plus a conditional Vortex draw. This guide explains how to participate, maximize your odds, and claim your prizes.
 
 ---
 
@@ -36,7 +36,7 @@ JACPOT runs a **two-tier daily draw system** — 25 guaranteed Small Win winners
 
 ### 🎁 Tier 1: Daily Small Wins
 
-**25 winners are selected every single day** — guaranteed, regardless of volume or jackpot conditions.
+**25 winners are selected every single day** — guaranteed, regardless of volume or vortex conditions.
 
 | Parameter | Value |
 | --- | --- |
@@ -66,9 +66,9 @@ JACPOT runs a **two-tier daily draw system** — 25 guaranteed Small Win winners
 
 ---
 
-### 🎰 Tier 2: Jackpot Draw
+### 🎰 Tier 2: Vortex Draw
 
-The main event — a single winner takes a massive prize from the Jackpot Pot.
+The main event — a single winner takes a massive prize from the Vortex Pot.
 
 | Parameter | Value |
 | --- | --- |
@@ -77,7 +77,7 @@ The main event — a single winner takes a massive prize from the Jackpot Pot.
 | **Selection Method** | Chainlink VRF (Luck-weighted) |
 | **Trigger** | Internal protocol parameters met |
 
-#### When the Jackpot Triggers (Winner Drawn)
+#### When the Vortex Triggers (Winner Drawn)
 
 | Allocation | Percentage | Destination |
 | --- | --- | --- |
@@ -90,10 +90,10 @@ The main event — a single winner takes a massive prize from the Jackpot Pot.
 
 | Allocation | Percentage | Destination |
 | --- | --- | --- |
-| 🔄 **Rollover** | 85% | Stays in pot (grows the jackpot) |
-| 💰 **Staker Rewards** | 15% | Distributed to JACPOT stakers in USDC |
+| 🔄 **Rollover** | 85% | Stays in pot (grows the vortex) |
+| 💰 **Staker Rewards** | 15% | Distributed to VORTEX stakers in USDC |
 
-> 💡 **Key Insight:** Even when nobody wins the jackpot, stakers earn USDC rewards. And the pot grows bigger, making the next draw even more exciting.
+> 💡 **Key Insight:** Even when nobody wins the vortex, stakers earn USDC rewards. And the pot grows bigger, making the next draw even more exciting.
 
 ---
 
@@ -125,10 +125,10 @@ Assume today's draw has 5 participants:
 
 During low-volume periods, the protocol enters **Pressure Mode**:
 
-1. Standard jackpot draws **pause** to let the pot accumulate
+1. Standard vortex draws **pause** to let the pot accumulate
 2. Trading taxes and treasury bonuses continue filling the pot
 3. **Daily Small Wins continue** — 25 winners every day, no interruption
-4. After **14 days**, a **forced Mega Draw** guarantees a jackpot winner
+4. After **14 days**, a **forced Mega Draw** guarantees a vortex winner
 
 ### Why This Is Good for You
 - The pot grows larger during Pressure Mode
@@ -166,8 +166,8 @@ During low-volume periods, the protocol enters **Pressure Mode**:
 **Q: Can I buy tickets without staking?**
 A: Yes. Anyone can buy tickets. But without Luck Staking, your effective entries are much lower.
 
-**Q: What happens to my tickets if the jackpot doesn't trigger?**
-A: Your tickets are still valid for the Small Wins draw. The jackpot portion simply rolls over.
+**Q: What happens to my tickets if the vortex doesn't trigger?**
+A: Your tickets are still valid for the Small Wins draw. The vortex portion simply rolls over.
 
 **Q: Can I buy tickets for future days?**
 A: No. Tickets are valid for the current day only.
@@ -179,4 +179,4 @@ A: Yes — 1 ticket is the minimum entry.
 A: Check the Winners page in the DApp. Winners also receive notifications.
 
 **Q: What if I forget to share on X within 48 hours?**
-A: Your Small Win prize rolls back into the pool. Jackpot wins are auto-claimed.
+A: Your Small Win prize rolls back into the pool. Vortex wins are auto-claimed.

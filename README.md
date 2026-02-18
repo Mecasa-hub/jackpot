@@ -2,15 +2,18 @@
 description: The First Engage-to-Win DeFi Protocol
 ---
 
-# 🎰 Welcome to JACPOT
+# 🎰 Welcome to VORTEX
 
-![JACPOT Banner](assets/logo-banner.png)
+<figure><img src="assets/ui/ui-home.png" alt="VORTEX Protocol — Landing Page"><figcaption><p>VORTEX Protocol — Landing Page</p></figcaption></figure>
+
+
+![VORTEX Banner](assets/logo-banner.png)
 
 > **Stake. Engage. Win.**
 
-**JACPOT** is a next-generation decentralized protocol that combines **gamified tokenomics**, a **provably fair jackpot system**, and a revolutionary **Luck Staking** engine to create the most engaging DeFi experience ever built.
+**VORTEX** is a next-generation decentralized protocol that combines **gamified tokenomics**, a **provably fair vortex system**, and a revolutionary **Luck Staking** engine to create the most engaging DeFi experience ever built.
 
-Unlike traditional yield farming or reflection tokens, JACPOT rewards **consistent engagement** — not passive holding. The longer you stake, the more you engage, and the higher your **Luck Score** grows — directly multiplying your odds of winning the ever-growing jackpot.
+Unlike traditional yield farming or reflection tokens, VORTEX rewards **consistent engagement** — not passive holding. The longer you stake, the more you engage, and the higher your **Luck Score** grows — directly multiplying your odds of winning the ever-growing vortex.
 
 ---
 
@@ -18,7 +21,7 @@ Unlike traditional yield farming or reflection tokens, JACPOT rewards **consiste
 
 | Feature | Description |
 | --- | --- |
-| 🎲 **Two-Tier Daily Draws** | 25 guaranteed Small Win winners every day + a conditional Jackpot draw — all via Chainlink VRF |
+| 🎲 **Two-Tier Daily Draws** | 25 guaranteed Small Win winners every day + a conditional Vortex draw — all via Chainlink VRF |
 | 🍀 **Luck Staking** | Stake tokens to earn Luck — a non-transferable score that multiplies your raffle odds |
 | 🗡️ **Daily Missions** | Complete on-chain tasks daily to earn Luck Shards and Mystery Crates |
 | 🎁 **Mystery Crates** | Daily claimable rewards with tiered rarity — from Luck Shards to USDC micro-rewards |
@@ -33,11 +36,11 @@ Unlike traditional yield farming or reflection tokens, JACPOT rewards **consiste
 
 **"Don't pay people to hold. Reward people for engaging."**
 
-Most DeFi protocols suffer from the same problem: they emit tokens to attract users, creating inflation that eventually kills the project. JACPOT takes a fundamentally different approach:
+Most DeFi protocols suffer from the same problem: they emit tokens to attract users, creating inflation that eventually kills the project. VORTEX takes a fundamentally different approach:
 
 * **No token emissions** — Staking doesn't mint new tokens
 * **No inflationary rewards** — You earn Luck (probability), not money
-* **Real revenue** — Jackpots are funded by trading tax; staker rewards and operations are funded by ticket sales and treasury yield
+* **Real revenue** — Vortexs are funded by trading tax; staker rewards and operations are funded by ticket sales and treasury yield
 * **Engagement > Holding** — Active participants have exponentially better odds than passive holders
 * **Daily winners** — 25 people win prizes every single day and share on X to claim
 
@@ -48,7 +51,7 @@ Most DeFi protocols suffer from the same problem: they emit tokens to attract us
 * [Overview →](introduction/overview.md)
 * [Tokenomics →](tokenomics/token-overview.md)
 * [How Luck Staking Works →](core-mechanics/luck-staking.md)
-* [Jackpot System →](core-mechanics/jackpot-system.md)
+* [Vortex System →](core-mechanics/vortex-system.md)
 * [Roadmap →](roadmap.md)
 * [FAQ →](faq.md)
 

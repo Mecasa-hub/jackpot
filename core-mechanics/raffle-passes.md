@@ -6,7 +6,7 @@ description: Simple on-chain raffle tickets — your entry to every daily draw
 
 ## Overview
 
-Raffle tickets are **simple on-chain entries** that grant participation in JACPOT's daily draws. There are no NFTs, no complex mechanics — just buy a ticket and you're in.
+Raffle tickets are **simple on-chain entries** that grant participation in VORTEX's daily draws. There are no NFTs, no complex mechanics — just buy a ticket and you're in.
 
 > **Design Philosophy:** Raffle tickets are intentionally simple. The complexity and competitive advantage come from Luck Staking, not from the ticket itself.
 
@@ -20,7 +20,7 @@ Raffle tickets are **simple on-chain entries** that grant participation in JACPO
 | **Price** | Fixed per ticket (set by protocol) |
 | **Validity** | Current day's draw only |
 | **Per-Wallet Cap** | Maximum tickets per wallet per day (anti-whale) |
-| **Purchase Method** | On-chain transaction via JACPOT DApp |
+| **Purchase Method** | On-chain transaction via VORTEX DApp |
 
 ### Ticket Lifecycle
 
@@ -36,7 +36,7 @@ Buy Ticket → Entered in Today's Draws → Draw Occurs → Ticket Expires
 - Tickets are **single-use** — each ticket is valid for one day's draws only
 - Tickets are **non-transferable** — they cannot be sold or traded
 - Unused tickets **expire at 00:00 UTC** if not entered in a draw
-- All ticket revenue flows to the **Treasury** (not the Jackpot Pot)
+- All ticket revenue flows to the **Treasury** (not the Vortex Pot)
 
 ## Two-Tier Daily Draw
 
@@ -60,7 +60,7 @@ Small Wins are distributed across four prize categories:
 | 🥉 **Lucky Pick** | 10 | 10% |
 | 🎁 **Micro Win** | 10 | 5% |
 
-### Tier 2: Jackpot Draw (Conditional)
+### Tier 2: Vortex Draw (Conditional)
 
 | Parameter | Value |
 | --- | --- |
@@ -69,9 +69,9 @@ Small Wins are distributed across four prize categories:
 | **Trigger** | Internal protocol parameters met |
 | **Selection** | Chainlink VRF (Luck-weighted) |
 
-The Jackpot draw only triggers when internal conditions are satisfied. If not triggered:
-- **85%** of the pot rolls over to the next day (growing the jackpot)
-- **15%** is distributed to JACPOT token stakers as USDC rewards
+The Vortex draw only triggers when internal conditions are satisfied. If not triggered:
+- **85%** of the pot rolls over to the next day (growing the vortex)
+- **15%** is distributed to VORTEX token stakers as USDC rewards
 
 ## Luck-Weighted Selection
 
@@ -100,11 +100,11 @@ All ticket sale revenue flows to the **Treasury**, which allocates it as follows
 | Allocation | Percentage | Purpose |
 | --- | --- | --- |
 | 🎁 **Small Wins Pool** | 10% | Funds the 25 daily Small Win prizes |
-| 🍀 **Staker Rewards** | 5% | USDC rewards distributed to JACPOT stakers |
+| 🍀 **Staker Rewards** | 5% | USDC rewards distributed to VORTEX stakers |
 | 🏦 **Treasury Reserve** | 5% | Operations, development, DeFi yield deployment |
 | 📣 **Hype Vault** | Variable | Counter-cyclical marketing fund |
 
-> **Important:** The Jackpot Pot is funded by **4% of the 5% buy/sell trading tax** (the remaining 1% goes to the Team) — not by ticket sales. These are two independent revenue streams.
+> **Important:** The Vortex Pot is funded by **4% of the 5% buy/sell trading tax** (the remaining 1% goes to the Team) — not by ticket sales. These are two independent revenue streams.
 
 ## Anti-Whale Protections
 
@@ -124,16 +124,16 @@ All ticket sale revenue flows to the **Treasury**, which allocates it as follows
 4. Upon verification of the post, prize is released to the winner's wallet
 5. Unclaimed prizes (no X post within 48 hours) roll back into the Small Wins pool
 
-### Jackpot
+### Vortex
 1. Winner is selected via Chainlink VRF
 2. Prize is automatically sent to the winner's wallet
-3. No social sharing requirement for jackpot wins (but encouraged)
+3. No social sharing requirement for vortex wins (but encouraged)
 
 ## Key Takeaways
 
 - ✅ **Simple on-chain tickets** — no NFTs, no complexity
-- ✅ **Daily draws** — 25 guaranteed winners every day + conditional jackpot
+- ✅ **Daily draws** — 25 guaranteed winners every day + conditional vortex
 - ✅ **Luck-weighted** — staking gives you a massive competitive advantage
 - ✅ **Anti-whale** — per-wallet caps and Luck weighting level the playing field
 - ✅ **Viral marketing** — Small Win winners share on X to claim, driving organic growth
-- ✅ **Transparent revenue** — ticket sales fund treasury; trading tax funds jackpot
+- ✅ **Transparent revenue** — ticket sales fund treasury; trading tax funds vortex

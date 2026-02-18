@@ -1,12 +1,12 @@
 ---
-description: JACPOT development roadmap and milestones
+description: VORTEX development roadmap and milestones
 ---
 
 # Roadmap
 
 ## Vision
 
-JACPOT aims to become the **leading Engage-to-Win protocol** in DeFi — a self-sustaining ecosystem where active participation is rewarded with real, provably fair prizes every single day.
+VORTEX aims to become the **leading Engage-to-Win protocol** in DeFi — a self-sustaining ecosystem where active participation is rewarded with real, provably fair prizes every single day.
 
 ---
 
@@ -17,7 +17,7 @@ JACPOT aims to become the **leading Engage-to-Win protocol** in DeFi — a self-
 - [x] GitBook documentation
 - [x] Community building (Telegram, X/Twitter, Discord)
 - [ ] Smart contract development
-  - [ ] ERC-20 token with 5/5% tax (4% jackpot / 1% team, deployer-adjustable)
+  - [ ] ERC-20 token with 5/5% tax (4% vortex / 1% team, deployer-adjustable)
   - [ ] Luck Staking engine
   - [ ] Two-tier daily draw system
   - [ ] Chainlink VRF integration
@@ -30,12 +30,12 @@ JACPOT aims to become the **leading Engage-to-Win protocol** in DeFi — a self-
 *Going live on Base*
 
 - [ ] Token launch on Base
-- [ ] Liquidity pool deployment (JACPOT/USDC)
+- [ ] Liquidity pool deployment (VORTEX/USDC)
 - [ ] Liquidity lock (12-month minimum)
 - [ ] DApp launch with core features:
   - [ ] Luck Staking portal
   - [ ] Raffle ticket purchasing
-  - [ ] Daily draw system (25 Small Wins + Conditional Jackpot)
+  - [ ] Daily draw system (25 Small Wins + Conditional Vortex)
   - [ ] Mystery Crate claiming
   - [ ] Daily Missions dashboard
 - [ ] Chainlink VRF live draws

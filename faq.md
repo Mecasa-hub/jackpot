@@ -1,36 +1,36 @@
 ---
-description: Frequently Asked Questions about JACPOT
+description: Frequently Asked Questions about VORTEX
 ---
 
 # FAQ
 
 ## General
 
-### What is JACPOT?
-JACPOT is the first **Engage-to-Win** decentralized protocol on Base. It combines a gamified jackpot system, Luck Staking mechanics, and a sustainable treasury model to reward active participation with better odds of winning real prizes.
+### What is VORTEX?
+VORTEX is the first **Engage-to-Win** decentralized protocol on Base. It combines a gamified vortex system, Luck Staking mechanics, and a sustainable treasury model to reward active participation with better odds of winning real prizes.
 
-### What chain is JACPOT on?
-JACPOT is deployed on **Base**, an Ethereum Layer 2 network. You'll need ETH on Base for gas fees and USDC on Base for purchasing raffle tickets.
+### What chain is VORTEX on?
+VORTEX is deployed on **Base**, an Ethereum Layer 2 network. You'll need ETH on Base for gas fees and USDC on Base for purchasing raffle tickets.
 
-### Is JACPOT a lottery?
-JACPOT is a **DeFi protocol with gamified mechanics**. The jackpot system uses provably fair randomness (Chainlink VRF) and is fully transparent on-chain. Unlike traditional lotteries, JACPOT rewards long-term engagement through the Luck Staking system.
+### Is VORTEX a lottery?
+VORTEX is a **DeFi protocol with gamified mechanics**. The vortex system uses provably fair randomness (Chainlink VRF) and is fully transparent on-chain. Unlike traditional lotteries, VORTEX rewards long-term engagement through the Luck Staking system.
 
 ---
 
 ## Token & Tokenomics
 
 ### What is the total supply?
-**1,000,000,000 (1 billion)** JACPOT tokens. The supply is fixed — no minting function exists.
+**1,000,000,000 (1 billion)** VORTEX tokens. The supply is fixed — no minting function exists.
 
 ### What is the buy/sell tax?
-**5% on both buys and sells.** The tax is collected in USDC — **4% flows to the Jackpot Pot** and **1% goes to the Team**. The split is deployer-adjustable.
+**5% on both buys and sells.** The tax is collected in USDC — **4% flows to the Vortex Pot** and **1% goes to the Team**. The split is deployer-adjustable.
 
 ### Does staking mint new tokens?
-**No.** JACPOT has zero inflation. Staking earns you **Luck** (a probability multiplier), not additional tokens. Your share of the total supply is never diluted.
+**No.** VORTEX has zero inflation. Staking earns you **Luck** (a probability multiplier), not additional tokens. Your share of the total supply is never diluted.
 
 ### How does the token generate revenue?
 Two independent streams:
-- **Trading Tax (5%)** → 4% funds the Jackpot Pot, 1% goes to the Team
+- **Trading Tax (5%)** → 4% funds the Vortex Pot, 1% goes to the Team
 - **Raffle Ticket Sales (USDC)** → 100% flows to the Treasury for staker rewards, operations, and ecosystem growth
 
 ---
@@ -38,10 +38,10 @@ Two independent streams:
 ## Luck Staking
 
 ### What is Luck?
-**Luck** is a non-transferable, non-tradeable on-chain score that accumulates when you stake JACPOT tokens. It directly multiplies your odds in every daily draw.
+**Luck** is a non-transferable, non-tradeable on-chain score that accumulates when you stake VORTEX tokens. It directly multiplies your odds in every daily draw.
 
 ### How do I earn Luck?
-- **Stake JACPOT tokens** — Luck accumulates based on amount staked × time × streak bonus
+- **Stake VORTEX tokens** — Luck accumulates based on amount staked × time × streak bonus
 - **Complete daily missions** — Earn Luck Shards that boost your score
 - **Claim Mystery Crates** — Random Luck Shard rewards daily
 - **Maintain streaks** — Consecutive daily engagement multiplies shard earnings up to 3x
@@ -57,12 +57,12 @@ Unstaking triggers a **50% Luck Decay penalty** — you immediately lose half yo
 ## Raffle & Draws
 
 ### How do I enter the raffle?
-Purchase **raffle tickets** with USDC through the JACPOT DApp. Each ticket enters you into that day's draws. Tickets are valid for the current day only.
+Purchase **raffle tickets** with USDC through the VORTEX DApp. Each ticket enters you into that day's draws. Tickets are valid for the current day only.
 
 ### How often are draws held?
 **Every day.** There are two tiers:
 1. **Small Wins** — 25 guaranteed winners daily
-2. **Jackpot Draw** — Conditional, triggers when internal protocol parameters are met
+2. **Vortex Draw** — Conditional, triggers when internal protocol parameters are met
 
 ### How are winners selected?
 All draws use **Chainlink VRF** (Verifiable Random Function) for provably fair, tamper-proof randomness. Winners are selected with **Luck-weighted probability** — higher Luck Scores mean better odds.
@@ -75,16 +75,16 @@ All draws use **Chainlink VRF** (Verifiable Random Function) for provably fair, 
 - 🎁 Micro Win (10 winners) — 5%
 
 ### Do I need to share on X (Twitter) to claim?
-**For Small Wins: Yes.** Winners must share a pre-filled post on X to claim their prize. This creates organic viral marketing. You have 48 hours to claim. **For Jackpot wins: No** — jackpot prizes are auto-claimed.
+**For Small Wins: Yes.** Winners must share a pre-filled post on X to claim their prize. This creates organic viral marketing. You have 48 hours to claim. **For Vortex wins: No** — vortex prizes are auto-claimed.
 
-### What happens when nobody wins the jackpot?
-- **85%** of the pot rolls over to the next day, making the jackpot bigger
-- **15%** is distributed to JACPOT stakers as USDC rewards
+### What happens when nobody wins the vortex?
+- **85%** of the pot rolls over to the next day, making the vortex bigger
+- **15%** is distributed to VORTEX stakers as USDC rewards
 - This means stakers earn even when there's no winner
 
 ### What is Pressure Mode?
 When trading volume drops below a threshold for 3 consecutive days, **Pressure Mode** activates:
-- Jackpot draws pause to let the pot accumulate
+- Vortex draws pause to let the pot accumulate
 - Daily Small Wins continue as normal (25 winners daily)
 - Treasury injects drought bonuses into the pot
 - After 14 days, a **forced Mega Draw** guarantees a winner
@@ -126,8 +126,8 @@ Idle treasury funds are deployed into **on-chain DeFi strategies** (lending prot
 A self-healing marketing fund that saves during high-volume periods and automatically deploys marketing spend during low-volume periods. It ensures the protocol can always fund growth campaigns when they're needed most.
 
 ### Can the project survive low volume?
-Yes. JACPOT has multiple sustainability layers:
-- Jackpot pot rolls over and grows during low volume
+Yes. VORTEX has multiple sustainability layers:
+- Vortex pot rolls over and grows during low volume
 - Treasury DeFi yield provides baseline revenue
 - Pressure Mode builds anticipation for Mega Draws
 - Hype Vault funds counter-cyclical marketing
@@ -143,8 +143,8 @@ Yes. All draws use **Chainlink VRF**, which provides cryptographically verifiabl
 ### Are the smart contracts audited?
 Smart contract audits will be completed before mainnet launch. Audit reports will be published publicly.
 
-### Can the team access the jackpot funds?
-The Jackpot Pot is managed by smart contracts with transparent on-chain rules. Fund movements are publicly verifiable on the blockchain.
+### Can the team access the vortex funds?
+The Vortex Pot is managed by smart contracts with transparent on-chain rules. Fund movements are publicly verifiable on the blockchain.
 
 ### Is the team doxxed?
 Team information and vesting schedules are detailed in the [Supply Distribution](tokenomics/supply-distribution.md) section.

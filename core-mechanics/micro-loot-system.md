@@ -6,13 +6,13 @@ description: Daily engagement through missions, crates, and shards
 
 ## Overview
 
-The **Micro-Loot System** is JACPOT's daily engagement layer — a gamified set of mechanics designed to keep users returning every day, even between major jackpot draws. It consists of three interconnected components:
+The **Micro-Loot System** is VORTEX's daily engagement layer — a gamified set of mechanics designed to keep users returning every day, even between major vortex draws. It consists of three interconnected components:
 
 1. **Daily Missions** — Simple tasks that reward Luck Shards
 2. **Mystery Crates** — Daily claimable loot boxes with tiered rewards
 3. **Luck Shards** — Bonus points that boost your Luck Score
 
-> **Design Philosophy:** The Micro-Loot System ensures that every day in the JACPOT ecosystem feels rewarding, regardless of whether you win the jackpot.
+> **Design Philosophy:** The Micro-Loot System ensures that every day in the VORTEX ecosystem feels rewarding, regardless of whether you win the vortex.
 
 ---
 
@@ -53,7 +53,7 @@ Consecutive daily engagement is rewarded with escalating bonuses:
 
 ### What Are Mystery Crates?
 
-Mystery Crates are **daily claimable rewards** available to all JACPOT stakers. Each crate contains a randomized reward based on a tiered rarity system.
+Mystery Crates are **daily claimable rewards** available to all VORTEX stakers. Each crate contains a randomized reward based on a tiered rarity system.
 
 ### Rarity Tiers
 
@@ -63,7 +63,7 @@ Mystery Crates are **daily claimable rewards** available to all JACPOT stakers. 
 | 🟦 **Uncommon** | 25% | 25–75 Luck Shards |
 | 🟪 **Rare** | 10% | 100–250 Luck Shards, small USDC micro-reward |
 | 🟨 **Epic** | 4% | 500+ Luck Shards, USDC micro-reward, bonus ticket entry |
-| 🟧 **Legendary** | 1% | 1,000+ Luck Shards, significant USDC reward, guaranteed jackpot entry |
+| 🟧 **Legendary** | 1% | 1,000+ Luck Shards, significant USDC reward, guaranteed vortex entry |
 
 ### Crate Mechanics
 

@@ -1,23 +1,26 @@
 ---
-description: All revenue streams and how they flow through the JACPOT ecosystem
+description: All revenue streams and how they flow through the VORTEX ecosystem
 ---
 
 # Revenue Model
 
+<figure><img src="../assets/ui/ui-analytics.png" alt="Analytics Dashboard — Revenue Flow Visualization"><figcaption><p>Analytics Dashboard — Revenue Flow Visualization</p></figcaption></figure>
+
+
 ## Revenue Streams
 
-JACPOT operates on a **dual-stream revenue model** with clear separation between the Jackpot Pot and the Treasury.
+VORTEX operates on a **dual-stream revenue model** with clear separation between the Vortex Pot and the Treasury.
 
-### Stream 1: Trading Tax → Jackpot Pot
+### Stream 1: Trading Tax → Vortex Pot
 
 | Detail | Value |
 | --- | --- |
 | **Rate** | 5% buy / 5% sell |
 | **Currency** | Collected in USDC |
-| **Destination** | 4% → Jackpot Pot, 1% → Team |
-| **Purpose** | Funds the daily jackpot prize pool |
+| **Destination** | 4% → Vortex Pot, 1% → Team |
+| **Purpose** | Funds the daily vortex prize pool |
 
-The 5% buy/sell tax on all JACPOT token trades is split: **4% flows to the Jackpot Pot** and **1% goes to the Team**. This split is deployer-adjustable. The 4% portion is the primary funding source for jackpot prizes.
+The 5% buy/sell tax on all VORTEX token trades is split: **4% flows to the Vortex Pot** and **1% goes to the Team**. This split is deployer-adjustable. The 4% portion is the primary funding source for vortex prizes.
 
 ### Stream 2: Raffle Ticket Sales → Treasury
 
@@ -47,7 +50,7 @@ Treasury yield is the **critical stabilizer** — it generates revenue regardles
 | Detail | Value |
 | --- | --- |
 | **Source** | Protocol-owned liquidity positions |
-| **Currency** | JACPOT + USDC |
+| **Currency** | VORTEX + USDC |
 | **Destination** | Compounds back into LP |
 | **Purpose** | Deepens liquidity floor over time |
 
@@ -55,7 +58,7 @@ Treasury yield is the **critical stabilizer** — it generates revenue regardles
 
 ```
 ┌──────────────────────┐     ┌──────────────────────┐
-│  JACPOT TOKEN TRADING │     │   RAFFLE TICKET SALES │
+│  VORTEX TOKEN TRADING │     │   RAFFLE TICKET SALES │
 │  (Buy/Sell on DEX)    │     │   ($5, $25, $100 etc) │
 │                       │     │                       │
 │   5% Tax (USDC)       │     │   100% of revenue     │
@@ -67,7 +70,7 @@ Treasury yield is the **critical stabilizer** — it generates revenue regardles
      │           │                        │
      ▼           ▼                        ▼
 ┌──────────┐ ┌────────┐      ┌──────────────────┐
-│ JACKPOT  │ │  TEAM  │      │    TREASURY       │
+│ VORTEX  │ │  TEAM  │      │    TREASURY       │
 │   POT    │ │ WALLET │      │  (Central Hub)    │
 │(Prize    │ └────────┘      │                   │
 │  Pool)   │◄────────────────│  Allocates:       │
@@ -78,7 +81,7 @@ Treasury yield is the **critical stabilizer** — it generates revenue regardles
                              └──────────────────┘
 ```
 
-> **Key principle:** The Jackpot Pot and Treasury are **separate entities**. Trading tax feeds the jackpot. Ticket sales feed the treasury. This ensures the prize pool grows predictably from organic trading activity.
+> **Key principle:** The Vortex Pot and Treasury are **separate entities**. Trading tax feeds the vortex. Ticket sales feed the treasury. This ensures the prize pool grows predictably from organic trading activity.
 
 ## Treasury Allocation (from Ticket Sales)
 
@@ -87,7 +90,7 @@ The Treasury receives 100% of raffle ticket revenue and allocates it daily:
 | Allocation | Percentage | Purpose |
 | --- | --- | --- |
 | **Small Wins Pool** | 10% | Daily tiered prizes distributed to multiple winners |
-| **Staker Rewards** | 5% | USDC distributed to JACPOT stakers |
+| **Staker Rewards** | 5% | USDC distributed to VORTEX stakers |
 | **Development** | 5% | Dev team costs and ongoing improvements |
 | **Treasury Reserves** | 5% | Operational reserves and emergency fund |
 | **DeFi Yield** | 75% | Deployed to DeFi protocols for sustainable yield |
@@ -117,7 +120,7 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax → Jackpot (4%) | $8,000 | $240,000 |
+| Trading Tax → Vortex (4%) | $8,000 | $240,000 |
 | Trading Tax → Team (1%) | $2,000 | $60,000 |
 | Raffle Ticket Sales | $2,000 | $60,000 |
 | Treasury Yield (on $500K) | ~$70 | ~$2,100 |
@@ -127,7 +130,7 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax → Jackpot (4%) | $80,000 | $2,400,000 |
+| Trading Tax → Vortex (4%) | $80,000 | $2,400,000 |
 | Trading Tax → Team (1%) | $20,000 | $600,000 |
 | Raffle Ticket Sales | $20,000 | $600,000 |
 | Treasury Yield (on $5M) | ~$700 | ~$21,000 |
@@ -137,7 +140,7 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax → Jackpot (4%) | $400,000 | $12,000,000 |
+| Trading Tax → Vortex (4%) | $400,000 | $12,000,000 |
 | Trading Tax → Team (1%) | $100,000 | $3,000,000 |
 | Raffle Ticket Sales | $100,000 | $3,000,000 |
 | Treasury Yield (on $25M) | ~$3,500 | ~$105,000 |
@@ -150,10 +153,10 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 ### Why This Model Is Sustainable
 
 1. **No emissions** — Revenue funds rewards, not token printing
-2. **Separated streams** — Jackpot and Treasury operate independently
+2. **Separated streams** — Vortex and Treasury operate independently
 3. **Treasury yield** — Provides baseline revenue even at zero volume
 4. **Compounding LP** — Liquidity deepens over time, reducing slippage
-5. **Buyback pressure** — Jackpot distributions include LP & Buyback allocation
+5. **Buyback pressure** — Vortex distributions include LP & Buyback allocation
 6. **Viral marketing** — Small wins require X sharing, driving organic growth at zero cost
 
 ### Risk Factors

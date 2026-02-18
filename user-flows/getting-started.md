@@ -1,12 +1,15 @@
 ---
-description: Your first steps in the JACPOT ecosystem
+description: Your first steps in the VORTEX ecosystem
 ---
 
 # Getting Started
 
-## Welcome to JACPOT! 🎰
+<figure><img src="../assets/ui/ui-home.png" alt="VORTEX Landing Page — Your Starting Point"><figcaption><p>VORTEX Landing Page — Your Starting Point</p></figcaption></figure>
 
-This guide walks you through everything you need to start participating in the JACPOT ecosystem — from buying your first tokens to entering your first daily draw.
+
+## Welcome to VORTEX! 🎰
+
+This guide walks you through everything you need to start participating in the VORTEX ecosystem — from buying your first tokens to entering your first daily draw.
 
 ---
 
@@ -31,13 +34,13 @@ If Base isn't already in your wallet:
 
 ---
 
-## Step 2: Buy JACPOT Tokens
+## Step 2: Buy VORTEX Tokens
 
-1. Visit the JACPOT DApp or your preferred Base DEX
-2. Swap ETH or USDC for JACPOT tokens
-3. Note: A **5% buy tax** is applied — 4% goes to the **Jackpot Pot** and 1% goes to the **Team**
+1. Visit the VORTEX DApp or your preferred Base DEX
+2. Swap ETH or USDC for VORTEX tokens
+3. Note: A **5% buy tax** is applied — 4% goes to the **Vortex Pot** and 1% goes to the **Team**
 
-> 💡 **Tip:** The buy tax funds the jackpot that you could win. Think of it as your contribution to the prize pool.
+> 💡 **Tip:** The buy tax funds the vortex that you could win. Think of it as your contribution to the prize pool.
 
 ---
 
@@ -46,7 +49,7 @@ If Base isn't already in your wallet:
 Staking is where the magic happens. Your staked tokens earn **Luck** — a score that multiplies your odds in every draw.
 
 1. Navigate to the **Staking** section in the DApp
-2. Choose the amount of JACPOT tokens to stake
+2. Choose the amount of VORTEX tokens to stake
 3. Confirm the transaction
 4. Your Luck Score begins accumulating immediately
 
@@ -77,7 +80,7 @@ Raffle tickets are your entry into the daily draws.
 - Tickets are **valid for the current day only** — they expire at 00:00 UTC
 - Each ticket's effective weight is multiplied by your **Luck Score**
 - **Per-wallet daily caps** apply to prevent whale domination
-- Ticket revenue goes to the **Treasury** (not the Jackpot Pot)
+- Ticket revenue goes to the **Treasury** (not the Vortex Pot)
 
 ---
 
@@ -107,9 +110,9 @@ Every day, two types of draws occur:
 - **Must share on X (Twitter) to claim** — this drives organic growth
 - Prizes distributed across 4 tiers (Top Prize, Runner Up, Lucky Pick, Micro Win)
 
-### 🎰 Jackpot Draw (Conditional)
+### 🎰 Vortex Draw (Conditional)
 - Triggers when internal protocol parameters are met
-- Funded by the 4% jackpot portion of the 5% buy/sell tax
+- Funded by the 4% vortex portion of the 5% buy/sell tax
 - If no winner is drawn: 85% rolls over, 15% goes to stakers
 - During Pressure Mode: pot grows until a forced Mega Draw at 14 days
 
@@ -119,7 +122,7 @@ Every day, two types of draws occur:
 
 | Day | Action | Why |
 | --- | --- | --- |
-| Day 1 | Buy JACPOT + Stake + Buy first tickets | Start accumulating Luck immediately |
+| Day 1 | Buy VORTEX + Stake + Buy first tickets | Start accumulating Luck immediately |
 | Day 2 | Claim crate + Complete all missions | Begin your streak |
 | Day 3–7 | Daily missions + Buy tickets | Build streak multiplier, grow Luck Score |
 | Day 7+ | Maintain streak, never unstake | Your compounding advantage grows daily |

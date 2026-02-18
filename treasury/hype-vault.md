@@ -76,9 +76,9 @@ Ticket Sales → Treasury
 | **Meme Contests** | Community-created content with USDC prizes |
 | **Partnership Announcements** | Co-marketing with partner protocols |
 | **Airdrop Campaigns** | Targeted ticket airdrops to new communities |
-| **Content Creation** | Articles, videos, infographics about JACPOT |
+| **Content Creation** | Articles, videos, infographics about VORTEX |
 | **Event Sponsorships** | Presence at crypto conferences and Twitter Spaces |
-| **Winner Amplification** | Boosting Daily Small Win and Jackpot winner posts on X |
+| **Winner Amplification** | Boosting Daily Small Win and Vortex winner posts on X |
 
 ## Synergy with the Two-Tier Draw System
 
@@ -86,7 +86,7 @@ The Hype Vault amplifies the protocol's built-in viral mechanics:
 
 ### During Normal Operations
 - **25 Daily Small Win winners** share on X to claim prizes → organic visibility
-- **Jackpot winners** create viral moments → organic growth
+- **Vortex winners** create viral moments → organic growth
 - Hype Vault **saves** — no spend needed when organic marketing is working
 
 ### During Low Volume / Pressure Mode
@@ -138,7 +138,7 @@ Most crypto projects have two modes:
 1. **Bull market** — Everything is great, no marketing needed
 2. **Bear market** — No money for marketing, project dies
 
-JACPOT has a **third mode**: The Hype Vault ensures marketing spend is **counter-cyclical** — it deploys when it's needed most, funded by savings from when it wasn't.
+VORTEX has a **third mode**: The Hype Vault ensures marketing spend is **counter-cyclical** — it deploys when it's needed most, funded by savings from when it wasn't.
 
 Combined with the Daily Small Wins system (which generates 25 organic tweets per day regardless of volume), the protocol **never goes silent** — even during the worst market conditions.
 

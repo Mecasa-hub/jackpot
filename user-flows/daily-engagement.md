@@ -1,12 +1,12 @@
 ---
-description: How to maximize your daily JACPOT experience
+description: How to maximize your daily VORTEX experience
 ---
 
 # Daily Engagement Guide
 
 ## Your Daily Routine
 
-JACPOT is designed to reward **consistent daily engagement**. This guide covers everything you should do each day to maximize your Luck Score, earn rewards, and improve your odds of winning.
+VORTEX is designed to reward **consistent daily engagement**. This guide covers everything you should do each day to maximize your Luck Score, earn rewards, and improve your odds of winning.
 
 ---
 
@@ -41,7 +41,7 @@ JACPOT is designed to reward **consistent daily engagement**. This guide covers 
 | 🟦 Uncommon | 25% | 25–75 Luck Shards |
 | 🟪 Rare | 10% | 100–250 Shards + USDC micro-reward |
 | 🟨 Epic | 4% | 500+ Shards + USDC + bonus ticket entry |
-| 🟧 Legendary | 1% | 1,000+ Shards + significant USDC + guaranteed jackpot entry |
+| 🟧 Legendary | 1% | 1,000+ Shards + significant USDC + guaranteed vortex entry |
 
 > 💡 **Tip:** Your staking tier improves crate odds. Legendary tier stakers have a 5% chance at Legendary crates vs. 1% for Bronze.
 
@@ -140,8 +140,8 @@ Every day, check the draw results:
 - You have **48 hours** to claim before the prize rolls back to the pool
 - Check the winners list even if you didn't win — seeing others win builds excitement
 
-### 🎰 Jackpot Draw
-- Check if the jackpot draw was triggered today
+### 🎰 Vortex Draw
+- Check if the vortex draw was triggered today
 - If triggered: winner announced in the DApp and on social channels
 - If not triggered: 85% rolls over (bigger pot tomorrow), 15% distributed to stakers
 

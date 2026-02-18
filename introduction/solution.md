@@ -1,12 +1,12 @@
 ---
-description: How JACPOT solves the engagement and sustainability problem
+description: How VORTEX solves the engagement and sustainability problem
 ---
 
-# The JACPOT Solution
+# The VORTEX Solution
 
 ## A New Paradigm: Engage-to-Win
 
-JACPOT introduces a fundamentally different approach to DeFi incentives. Instead of paying users to hold (which creates sell pressure), JACPOT **rewards users for engaging** — and the reward is **better odds of winning real prizes**.
+VORTEX introduces a fundamentally different approach to DeFi incentives. Instead of paying users to hold (which creates sell pressure), VORTEX **rewards users for engaging** — and the reward is **better odds of winning real prizes**.
 
 This creates a virtuous cycle:
 
@@ -21,15 +21,15 @@ Engage More → Luck Grows → Better Odds → Win More → Tell Friends → Mor
 Every day, the protocol runs two types of draws:
 
 - **25 Small Wins** — Guaranteed daily winners selected from all ticket holders. Winners must share on X (Twitter) to claim, creating organic viral marketing.
-- **Conditional Jackpot** — The main prize draw triggers only when internal parameters are met, preventing the pot from being drained during low-participation periods.
+- **Conditional Vortex** — The main prize draw triggers only when internal parameters are met, preventing the pot from being drained during low-participation periods.
 
 All draws use **Chainlink VRF** for provably fair, tamper-proof randomness.
 
 ### 2. 🍀 Luck Staking Engine
 
-Traditional staking pays you tokens. JACPOT staking pays you **probability**.
+Traditional staking pays you tokens. VORTEX staking pays you **probability**.
 
-- Stake JACPOT tokens to accumulate a **Luck Score**
+- Stake VORTEX tokens to accumulate a **Luck Score**
 - Luck is **non-transferable** and **non-tradeable** — it cannot be bought, only earned
 - Your Luck Score directly **multiplies** your odds in every draw
 - Unstaking incurs a **50% Luck penalty**, discouraging short-term speculation
@@ -46,11 +46,11 @@ To keep users coming back every day:
 
 ### 4. 🏦 Sustainable Treasury Model
 
-JACPOT's revenue model is built on **two independent streams**:
+VORTEX's revenue model is built on **two independent streams**:
 
 | Revenue Stream | Source | Destination |
 | --- | --- | --- |
-| **Trading Tax** | 5% buy/sell tax collected in USDC | 4% → Jackpot Pot, 1% → Team (deployer-adjustable) |
+| **Trading Tax** | 5% buy/sell tax collected in USDC | 4% → Vortex Pot, 1% → Team (deployer-adjustable) |
 | **Ticket Sales** | Raffle ticket purchases in USDC | Treasury (staker rewards, operations, Hype Vault) |
 
 The treasury deploys idle funds into **on-chain DeFi strategies** (Aave, Compound) to generate sustainable yield that funds:
@@ -60,17 +60,17 @@ The treasury deploys idle funds into **on-chain DeFi strategies** (Aave, Compoun
 
 ### 5. 🌡️ Self-Healing Mechanics
 
-When volume drops, most protocols die. JACPOT gets **stronger**:
+When volume drops, most protocols die. VORTEX gets **stronger**:
 
 - **Pressure Mode** activates after 3 consecutive low-volume days
-- Standard jackpot draws pause while the pot continues to grow from taxes and treasury bonuses
+- Standard vortex draws pause while the pot continues to grow from taxes and treasury bonuses
 - After 14 days, a **forced Mega Draw** guarantees a winner
 - The Hype Vault automatically funds marketing campaigns during droughts
 - The result: low volume creates **anticipation**, not abandonment
 
 ## Why This Works
 
-| Problem | JACPOT's Solution |
+| Problem | VORTEX's Solution |
 | --- | --- |
 | Users dump after buying | Luck Staking penalizes selling (50% Luck loss) |
 | No reason to return daily | 25 daily winners + missions + crates + streaks |
@@ -84,12 +84,12 @@ When volume drops, most protocols die. JACPOT gets **stronger**:
 
 ```
      ┌─────────────────────────────────────┐
-     │         Users Buy JACPOT            │
+     │         Users Buy VORTEX            │
      └──────────────┬──────────────────────┘
                     │
                     ▼
      ┌──────────────────────────────┐
-     │  5% Tax → Jackpot Pot Grows  │
+     │  5% Tax → Vortex Pot Grows  │
      └──────────────┬───────────────┘
                     │
                     ▼

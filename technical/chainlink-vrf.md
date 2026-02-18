@@ -1,5 +1,5 @@
 ---
-description: How Chainlink VRF ensures provably fair randomness in all JACPOT draws
+description: How Chainlink VRF ensures provably fair randomness in all VORTEX draws
 ---
 
 # Chainlink VRF Integration
@@ -20,18 +20,18 @@ Fairness is **non-negotiable** for a raffle-based protocol. Users must trust tha
 | **Tamper-proof** | Neither the oracle, the team, nor miners can manipulate the result |
 | **Battle-tested** | Used by hundreds of protocols, billions in value secured |
 
-## How It Works in JACPOT
+## How It Works in VORTEX
 
-### Jackpot Draws
+### Vortex Draws
 
 ```
 1. Draw time arrives (e.g., Friday 20:00 UTC)
    │
-2. Anyone calls triggerDraw() on the Jackpot Contract
+2. Anyone calls triggerDraw() on the Vortex Contract
    │
-3. Jackpot Contract snapshots all valid Raffle Passes
+3. Vortex Contract snapshots all valid Raffle Passes
    │
-4. Jackpot Contract calls VRF Consumer → requestRandomWinner()
+4. Vortex Contract calls VRF Consumer → requestRandomWinner()
    │
 5. VRF Consumer sends request to Chainlink VRF Coordinator
    │
@@ -39,9 +39,9 @@ Fairness is **non-negotiable** for a raffle-based protocol. Users must trust tha
    │
 7. Chainlink calls fulfillRandomWords() on VRF Consumer
    │
-8. VRF Consumer forwards random number to Jackpot Contract
+8. VRF Consumer forwards random number to Vortex Contract
    │
-9. Jackpot Contract uses random number to select weighted winner
+9. Vortex Contract uses random number to select weighted winner
    │
 10. Winner is announced, prize distributed, passes burned
 ```
@@ -89,7 +89,7 @@ Mystery Crate outcomes also use Chainlink VRF:
 
 ### Verification Tools
 
-- JACPOT will provide a **"Verify Draw" page** on the website
+- VORTEX will provide a **"Verify Draw" page** on the website
 - Input any draw ID to see: VRF request, random number, proof, winner selection math
 - All data sourced directly from on-chain events
 

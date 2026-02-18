@@ -6,7 +6,7 @@ description: Security measures, audit plans, and risk mitigation strategies
 
 ## Security Philosophy
 
-JACPOT follows a **defense-in-depth** approach to security:
+VORTEX follows a **defense-in-depth** approach to security:
 
 1. **Minimize attack surface** — Simple contracts with minimal admin functions
 2. **Immutability where possible** — Core contracts are non-upgradeable
@@ -25,7 +25,7 @@ JACPOT follows a **defense-in-depth** approach to security:
 
 ## Bug Bounty Program
 
-JACPOT will launch a bug bounty program on Immunefi (e.g., Immunefi):
+VORTEX will launch a bug bounty program on Immunefi (e.g., Immunefi):
 
 | Severity | Reward |
 | --- | --- |
@@ -47,7 +47,7 @@ JACPOT will launch a bug bounty program on Immunefi (e.g., Immunefi):
 | **Max wallet limit** | Prevents single wallet from holding excessive supply |
 | **Max transaction limit** | Prevents large single trades from manipulating price |
 
-### Jackpot Contract
+### Vortex Contract
 
 | Measure | Detail |
 | --- | --- |
@@ -100,7 +100,7 @@ JACPOT will launch a bug bounty program on Immunefi (e.g., Immunefi):
 
 ## Open Source
 
-All JACPOT smart contracts will be:
+All VORTEX smart contracts will be:
 - Published on GitHub under MIT
 - Verified on block explorer (source code readable)
 - Accompanied by comprehensive documentation

@@ -6,9 +6,9 @@ description: Important risks, disclaimers, and legal considerations
 
 ## General Disclaimer
 
-**JACPOT is an experimental decentralized protocol.** Participation involves significant risk. This documentation is for informational purposes only and does not constitute financial advice, investment advice, or a solicitation to purchase any tokens or digital assets.
+**VORTEX is an experimental decentralized protocol.** Participation involves significant risk. This documentation is for informational purposes only and does not constitute financial advice, investment advice, or a solicitation to purchase any tokens or digital assets.
 
-**By interacting with JACPOT, you acknowledge and accept all risks described below.**
+**By interacting with VORTEX, you acknowledge and accept all risks described below.**
 
 ---
 
@@ -29,20 +29,20 @@ description: Important risks, disclaimers, and legal considerations
 
 | Risk | Description |
 | --- | --- |
-| **Token price volatility** | JACPOT price may fluctuate significantly |
+| **Token price volatility** | VORTEX price may fluctuate significantly |
 | **Impermanent loss** | Liquidity providers may experience IL |
 | **No guaranteed returns** | Raffle participation does not guarantee winnings |
 | **Tax impact on price** | 5/5% tax creates friction for short-term trading |
 | **Liquidity risk** | In extreme scenarios, liquidity may be insufficient for large sells |
 
-### 3. Raffle & Jackpot Risk
+### 3. Raffle & Vortex Risk
 
 | Risk | Description |
 | --- | --- |
 | **No guarantee of winning** | Raffle is probabilistic — most participants will not win any given draw |
 | **Odds vary** | Your odds depend on total participation, which changes every draw |
 | **Pass cost is non-refundable** | Raffle Passes are consumed after each draw regardless of outcome |
-| **Pot size varies** | Jackpot size depends on trading volume and pass sales |
+| **Pot size varies** | Vortex size depends on trading volume and pass sales |
 
 ### 4. Treasury & Yield Risk
 
@@ -61,7 +61,7 @@ description: Important risks, disclaimers, and legal considerations
 | **Jurisdictional restrictions** | Some jurisdictions may prohibit participation |
 | **Evolving regulations** | Crypto regulations are rapidly changing worldwide |
 
-> **JACPOT is designed to minimize regulatory risk through careful structural choices (simple on-chain raffle tickets, no inflationary emissions, provably fair mechanics). However, regulatory outcomes cannot be predicted or guaranteed.**
+> **VORTEX is designed to minimize regulatory risk through careful structural choices (simple on-chain raffle tickets, no inflationary emissions, provably fair mechanics). However, regulatory outcomes cannot be predicted or guaranteed.**
 
 ### 6. Operational Risk
 
@@ -85,21 +85,21 @@ description: Important risks, disclaimers, and legal considerations
 ## Important Legal Notices
 
 ### Not Financial Advice
-Nothing in this documentation, the JACPOT website, or any associated communications constitutes financial advice. Always do your own research (DYOR) and consult with qualified financial advisors before making investment decisions.
+Nothing in this documentation, the VORTEX website, or any associated communications constitutes financial advice. Always do your own research (DYOR) and consult with qualified financial advisors before making investment decisions.
 
 ### No Guarantees
-JACPOT makes no guarantees regarding:
+VORTEX makes no guarantees regarding:
 - Token price performance
-- Jackpot sizes or frequency of wins
+- Vortex sizes or frequency of wins
 - Treasury yield rates
 - Protocol longevity
 - Regulatory outcomes
 
 ### Jurisdictional Compliance
-It is the user's responsibility to ensure that participation in JACPOT complies with the laws and regulations of their jurisdiction. The protocol may be restricted in certain regions.
+It is the user's responsibility to ensure that participation in VORTEX complies with the laws and regulations of their jurisdiction. The protocol may be restricted in certain regions.
 
 ### Tax Obligations
-Users are responsible for understanding and fulfilling any tax obligations arising from their participation in JACPOT, including but not limited to:
+Users are responsible for understanding and fulfilling any tax obligations arising from their participation in VORTEX, including but not limited to:
 - Capital gains from token trading
 - Income from raffle winnings
 - Any other applicable taxes
@@ -108,7 +108,7 @@ Users are responsible for understanding and fulfilling any tax obligations arisi
 
 ## Risk Acknowledgment
 
-By interacting with JACPOT smart contracts, you acknowledge that:
+By interacting with VORTEX smart contracts, you acknowledge that:
 
 1. You have read and understood all risks described above
 2. You are participating voluntarily with funds you can afford to lose

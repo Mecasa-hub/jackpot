@@ -4,11 +4,14 @@ description: The engine that rewards loyalty with probability
 
 # Luck Staking
 
+<figure><img src="../assets/ui/ui-strategies.png" alt="Luck Staking Interface — Stake & Track Your Luck Score"><figcaption><p>Luck Staking Interface — Stake & Track Your Luck Score</p></figcaption></figure>
+
+
 ## What is Luck Staking?
 
-**Luck Staking** is JACPOT's revolutionary staking mechanism that rewards long-term holders with **increased winning probability** rather than inflationary token emissions.
+**Luck Staking** is VORTEX's revolutionary staking mechanism that rewards long-term holders with **increased winning probability** rather than inflationary token emissions.
 
-When you stake JACPOT tokens, you accumulate a **Luck Score** — a non-transferable, non-tradeable on-chain metric that directly multiplies your odds in every daily draw.
+When you stake VORTEX tokens, you accumulate a **Luck Score** — a non-transferable, non-tradeable on-chain metric that directly multiplies your odds in every daily draw.
 
 > **Key Insight:** You can't buy Luck. You can only earn it through time and commitment.
 
@@ -16,7 +19,7 @@ When you stake JACPOT tokens, you accumulate a **Luck Score** — a non-transfer
 
 ### Staking Mechanics
 
-1. **Deposit** JACPOT tokens into the Luck Staking contract
+1. **Deposit** VORTEX tokens into the Luck Staking contract
 2. **Accumulate** Luck Score every block/epoch based on your staked amount
 3. **Compound** your Luck through daily engagement (missions, crates, streaks)
 4. **Multiply** your raffle odds proportionally to your Luck Score
@@ -29,7 +32,7 @@ Luck Score = (Staked Amount × Time Multiplier × Streak Bonus) + Luck Shards
 
 | Component | Description |
 | --- | --- |
-| **Staked Amount** | Number of JACPOT tokens locked in the staking contract |
+| **Staked Amount** | Number of VORTEX tokens locked in the staking contract |
 | **Time Multiplier** | Increases logarithmically with staking duration |
 | **Streak Bonus** | Multiplier from consecutive daily engagement |
 | **Luck Shards** | Bonus points earned from missions and crates |
@@ -49,7 +52,7 @@ Luck Score = (Staked Amount × Time Multiplier × Streak Bonus) + Luck Shards
 
 ## Luck Decay (Unstaking Penalty)
 
-To prevent "stake-and-dump" strategies, JACPOT implements a **50% Luck Decay** penalty:
+To prevent "stake-and-dump" strategies, VORTEX implements a **50% Luck Decay** penalty:
 
 - **Unstaking** any amount triggers an immediate **50% reduction** in your total Luck Score
 - **Selling** tokens also triggers Luck Decay proportional to the sell amount
@@ -88,10 +91,10 @@ Your Luck Score and staking duration determine your **Tier**, which unlocks prog
 | Tier | Requirement | Key Benefits |
 | --- | --- | --- |
 | 🥉 **Bronze** | Stake any amount | Basic draw entry, daily missions |
-| 🥈 **Silver** | 10,000+ JACPOT staked, 30+ days | Better crate odds, streak bonuses |
-| 🥇 **Gold** | 50,000+ JACPOT staked, 90+ days | Exclusive tier-only draws, priority support |
-| 💎 **Diamond** | 200,000+ JACPOT staked, 180+ days | VIP draws, governance voting, premium crates |
-| 👑 **Legendary** | 500,000+ JACPOT staked, 365+ days | Maximum multipliers, exclusive events, advisory role |
+| 🥈 **Silver** | 10,000+ VORTEX staked, 30+ days | Better crate odds, streak bonuses |
+| 🥇 **Gold** | 50,000+ VORTEX staked, 90+ days | Exclusive tier-only draws, priority support |
+| 💎 **Diamond** | 200,000+ VORTEX staked, 180+ days | VIP draws, governance voting, premium crates |
+| 👑 **Legendary** | 500,000+ VORTEX staked, 365+ days | Maximum multipliers, exclusive events, advisory role |
 
 ## Staking Strategies
 

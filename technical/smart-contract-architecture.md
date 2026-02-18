@@ -4,21 +4,24 @@ description: Smart contract design, interactions, and deployment architecture
 
 # Smart Contract Architecture
 
+<figure><img src="../assets/ui/ui-contracts.png" alt="Smart Contract Explorer — On-chain Architecture"><figcaption><p>Smart Contract Explorer — On-chain Architecture</p></figcaption></figure>
+
+
 ## Overview
 
-![JACPOT System Architecture](../assets/diagram-architecture.png)
+![VORTEX System Architecture](../assets/diagram-architecture.png)
 
-The JACPOT protocol consists of **six core smart contracts** that interact to form the complete ecosystem. All contracts are designed with security, transparency, and immutability as primary goals.
+The VORTEX protocol consists of **six core smart contracts** that interact to form the complete ecosystem. All contracts are designed with security, transparency, and immutability as primary goals.
 
 ## Contract Map
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                   JACPOT CONTRACTS                   │
+│                   VORTEX CONTRACTS                   │
 ├─────────────────────────────────────────────────────────────┤
 │                                                              │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐   │
-│  │   TOKEN       │    │   STAKING    │    │   JACKPOT    │   │
+│  │   TOKEN       │    │   STAKING    │    │   VORTEX    │   │
 │  │   CONTRACT    │◄──►│   CONTRACT   │    │   CONTRACT   │   │
 │  │              │    │              │    │              │   │
 │  │ • ERC-20     │    │ • Luck Score │    │ • Pot mgmt   │   │
@@ -36,7 +39,7 @@ The JACPOT protocol consists of **six core smart contracts** that interact to fo
 │  │ • Swap to    │    │              │    │              │   │
 │  │   USDC       │    │ • ERC-1155   │    │ • Random     │   │
 │  │ • Route to   │────►│ • Mint/Burn  │◄──►│   number     │   │
-│  │   Jackpot    │    │ • Tiers      │    │ • Callback   │   │
+│  │   Vortex    │    │ • Tiers      │    │ • Callback   │   │
 │  └──────────────┘    │ • Pricing    │    │ • Verifiable │   │
 │                      └──────────────┘    └──────────────┘   │
 │                                                              │
@@ -77,7 +80,7 @@ interface IProjectToken {
 **Tax Logic:**
 - On buy/sell via DEX: 5% of transaction value is intercepted
 - Intercepted tokens are swapped to USDC via DEX router
-- USDC is forwarded to the Jackpot Contract
+- USDC is forwarded to the Vortex Contract
 - Swap occurs when accumulated tax tokens exceed a threshold (gas optimization)
 
 ### 2. Staking Contract
@@ -130,7 +133,7 @@ function calculateLuck(address user) public view returns (uint256) {
 }
 ```
 
-### 3. Jackpot Contract
+### 3. Vortex Contract
 
 | Property | Detail |
 | --- | --- |
@@ -142,7 +145,7 @@ function calculateLuck(address user) public view returns (uint256) {
 **Core Functions:**
 
 ```solidity
-interface IJackpot {
+interface IVortex {
     function deposit(uint256 usdcAmount) external;        // Receive tax/pass revenue
     function triggerDraw() external;                       // Permissionless after schedule
     function claimPrize(uint256 drawId) external;          // Winner claims
@@ -212,7 +215,7 @@ Emit DrawCompleted event
 ```solidity
 interface IRafflePass {
     function purchase(uint8 tier, uint256 quantity) external; // Pay USDC, receive raffle entry
-    function burnForDraw(address holder, uint256 tokenId) external; // Called by Jackpot
+    function burnForDraw(address holder, uint256 tokenId) external; // Called by Vortex
     function getEntries(uint8 tier) external pure returns (uint256);
 }
 ```
@@ -229,8 +232,8 @@ interface IRafflePass {
 
 ```solidity
 contract VRFConsumer is VRFConsumerBaseV2Plus {
-    // Called by Jackpot Contract to request randomness
-    function requestRandomWinner(uint256 drawId) external onlyJackpot {
+    // Called by Vortex Contract to request randomness
+    function requestRandomWinner(uint256 drawId) external onlyVortex {
         uint256 requestId = s_vrfCoordinator.requestRandomWords(
             VRFV2PlusClient.RandomWordsRequest({
                 keyHash: keyHash,
@@ -249,7 +252,7 @@ contract VRFConsumer is VRFConsumerBaseV2Plus {
         internal override 
     {
         uint256 drawId = drawRequests[requestId];
-        IJackpot(jackpotContract).completeDraw(drawId, randomWords[0]);
+        IVortex(vortexContract).completeDraw(drawId, randomWords[0]);
     }
 }
 ```
@@ -269,13 +272,13 @@ The Treasury is not a custom smart contract but a **Gnosis Safe** multi-sig wall
 ```
 User Actions:
 
-[Buy Token] ──► Token Contract ──► Tax Router ──► Jackpot (USDC)
-[Sell Token] ──► Token Contract ──► Tax Router ──► Jackpot (USDC)
+[Buy Token] ──► Token Contract ──► Tax Router ──► Vortex (USDC)
+[Sell Token] ──► Token Contract ──► Tax Router ──► Vortex (USDC)
 [Stake] ──────► Staking Contract ──► Luck Score Updated
 [Unstake] ────► Staking Contract ──► 50% Luck Decay Applied
-[Buy Pass] ───► Raffle Pass Contract ──► 90% Jackpot / 10% LP
+[Buy Pass] ───► Raffle Pass Contract ──► 90% Vortex / 10% LP
 [Claim Crate] ► Staking Contract ──► VRF Consumer ──► Crate Result
-[Trigger Draw] ► Jackpot Contract ──► VRF Consumer ──► Winner Selected
+[Trigger Draw] ► Vortex Contract ──► VRF Consumer ──► Winner Selected
 ```
 
 ## Deployment Plan

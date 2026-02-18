@@ -1,19 +1,19 @@
 ---
-description: JACPOT Token — The Key to the Ecosystem
+description: VORTEX Token — The Key to the Ecosystem
 ---
 
 # Token Overview
 
-## JACPOT Token (ERC-20)
+## VORTEX Token (ERC-20)
 
-The **JACPOT** token is the native utility token of the JACPOT ecosystem, deployed on the **Base** blockchain. It serves as the primary access key to all ecosystem features — from Luck Staking and raffle participation to tier progression and governance.
+The **VORTEX** token is the native utility token of the VORTEX ecosystem, deployed on the **Base** blockchain. It serves as the primary access key to all ecosystem features — from Luck Staking and raffle participation to tier progression and governance.
 
 ## Token Specifications
 
 | Parameter | Value |
 | --- | --- |
-| **Token Name** | JACPOT |
-| **Symbol** | JACPOT |
+| **Token Name** | VORTEX |
+| **Symbol** | VORTEX |
 | **Chain** | Base (Ethereum L2) |
 | **Standard** | ERC-20 |
 | **Total Supply** | 1,000,000,000 (1 Billion) |
@@ -24,10 +24,10 @@ The **JACPOT** token is the native utility token of the JACPOT ecosystem, deploy
 
 ## Core Utility
 
-The JACPOT token provides the following utilities within the ecosystem:
+The VORTEX token provides the following utilities within the ecosystem:
 
 ### 1. 🍀 Luck Staking
-- Stake JACPOT tokens to accumulate a **Luck Score**
+- Stake VORTEX tokens to accumulate a **Luck Score**
 - Luck is non-transferable and directly multiplies your raffle odds
 - Unstaking incurs a **50% Luck penalty** to discourage short-term speculation
 - Zero inflation — staking does not mint new tokens
@@ -54,14 +54,14 @@ The JACPOT token provides the following utilities within the ecosystem:
 
 ## Revenue Streams
 
-The JACPOT token generates two independent revenue streams for the ecosystem:
+The VORTEX token generates two independent revenue streams for the ecosystem:
 
 | Stream | Source | Destination |
 | --- | --- | --- |
-| **Trading Tax** | 5% on every buy/sell | 4% → Jackpot Pot, 1% → Team (deployer-adjustable) |
+| **Trading Tax** | 5% on every buy/sell | 4% → Vortex Pot, 1% → Team (deployer-adjustable) |
 | **Ticket Sales** | Raffle ticket purchases (USDC) | Treasury → Staker rewards, operations, Hype Vault |
 
-## Why Hold JACPOT?
+## Why Hold VORTEX?
 
 | Benefit | Description |
 | --- | --- |

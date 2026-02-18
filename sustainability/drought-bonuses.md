@@ -1,12 +1,12 @@
 ---
-description: Treasury-funded jackpot top-ups that ensure the pot stays attractive during slow periods
+description: Treasury-funded vortex top-ups that ensure the pot stays attractive during slow periods
 ---
 
 # Drought Bonuses
 
 ## Purpose
 
-Drought Bonuses are **treasury-funded injections** into the Jackpot Pot during low-volume periods. They ensure the pot remains attractive and growing even when organic tax revenue from trading is minimal.
+Drought Bonuses are **treasury-funded injections** into the Vortex Pot during low-volume periods. They ensure the pot remains attractive and growing even when organic tax revenue from trading is minimal.
 
 ## How They Work
 
@@ -73,7 +73,7 @@ Drought Bonuses work alongside other systems that remain active:
 | **Mystery Crates** | ✅ Active | Enhanced drop rates during drought |
 | **Daily Missions** | ✅ Active | Bonus missions added |
 | **Luck Staking** | ✅ Active | Enhanced Luck Shard earnings |
-| **Jackpot Draw** | ❌ Paused | Pot accumulates for Mega Draw |
+| **Vortex Draw** | ❌ Paused | Pot accumulates for Mega Draw |
 
 > **Small Wins are the engagement bridge** — even during a drought, 25 people win prizes every day and share on X, keeping the protocol visible and active.
 
@@ -116,7 +116,7 @@ Volume Drops → Pressure Mode Activates
     │   └── Pot grows faster than expected
     │       └── "The protocol is healthy!"
     │
-    └── Pot accumulates (no jackpot payouts)
+    └── Pot accumulates (no vortex payouts)
         └── Pot gets HUGE
             └── Attracts new users
                 └── Volume recovers
@@ -125,7 +125,7 @@ Volume Drops → Pressure Mode Activates
 ```
 
 1. Volume drops → Pressure Mode activates
-2. Small Wins keep 25 people tweeting about JACPOT every day
+2. Small Wins keep 25 people tweeting about VORTEX every day
 3. Drought Bonuses inject funds → Pot grows faster than expected
 4. Community sees pot growing despite low volume → "The protocol is healthy!"
 5. Growing pot attracts attention → New users arrive

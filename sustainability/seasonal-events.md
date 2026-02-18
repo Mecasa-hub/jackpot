@@ -6,7 +6,7 @@ description: Limited-time events that drive engagement spikes and community exci
 
 ## Overview
 
-Seasonal Events are **limited-time campaigns** that inject fresh excitement into the JACPOT ecosystem. They provide bonus rewards, unique challenges, and special draw mechanics that drive engagement spikes and attract new users.
+Seasonal Events are **limited-time campaigns** that inject fresh excitement into the VORTEX ecosystem. They provide bonus rewards, unique challenges, and special draw mechanics that drive engagement spikes and attract new users.
 
 > **Design Philosophy:** Seasonal Events create urgency and novelty — two powerful psychological drivers that complement the steady daily engagement loop.
 
@@ -20,8 +20,8 @@ Timed around major holidays and cultural moments:
 | Event | Timing | Theme |
 | --- | --- | --- |
 | **New Year's Mega Draw** | Dec 31 – Jan 7 | Massive bonus pot + double Luck Shards |
-| **Valentine's Luck** | Feb 10–16 | Paired draws (2 winners per jackpot) |
-| **Summer Jackpot** | Jul 1–14 | Extended event with daily bonus crates |
+| **Valentine's Luck** | Feb 10–16 | Paired draws (2 winners per vortex) |
+| **Summer Vortex** | Jul 1–14 | Extended event with daily bonus crates |
 | **Halloween Crates** | Oct 25–31 | Special themed crates with exclusive rewards |
 | **Black Friday Frenzy** | Nov 28–30 | Discounted ticket bundles + triple Shards |
 
@@ -58,7 +58,7 @@ During seasonal events, the protocol can activate temporary modifiers:
 | **Bonus Crates** | Extra daily crate with improved odds | Event period |
 | **Extra Small Wins** | 50 daily winners instead of 25 | Event period |
 | **Luck Boost** | 1.5x Luck Score for all stakers | Event period |
-| **Pot Injection** | Treasury bonus added to Jackpot Pot | One-time |
+| **Pot Injection** | Treasury bonus added to Vortex Pot | One-time |
 
 ### Event-Exclusive Rewards
 
@@ -79,7 +79,7 @@ Events are strategically scheduled to maintain engagement throughout the year:
 ```
 Q1: New Year's Mega Draw → Valentine's Luck → Spring Season
 Q2: Easter Egg Hunt → Summer Kickoff → Competitive Season 1
-Q3: Summer Jackpot → Back-to-School → Competitive Season 2
+Q3: Summer Vortex → Back-to-School → Competitive Season 2
 Q4: Halloween Crates → Black Friday Frenzy → Holiday Mega Draw
 ```
 
@@ -122,7 +122,7 @@ During seasonal events, core systems continue operating normally with event bonu
 | System | Normal Operation | During Events |
 | --- | --- | --- |
 | **Daily Small Wins** | 25 winners/day | 25–50 winners/day |
-| **Jackpot Draw** | Conditional trigger | Same rules + possible pot injection |
+| **Vortex Draw** | Conditional trigger | Same rules + possible pot injection |
 | **Luck Staking** | Standard accumulation | Same + possible Luck Boost modifier |
 | **Mystery Crates** | 1 per day | 1–2 per day + themed crates |
 | **Daily Missions** | Standard missions | Standard + event-specific bonus missions |

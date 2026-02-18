@@ -1,10 +1,10 @@
 ---
-description: How the 1 Billion JACPOT tokens are allocated
+description: How the 1 Billion VORTEX tokens are allocated
 ---
 
 # Supply Distribution
 
-## Total Supply: 1,000,000,000 JACPOT
+## Total Supply: 1,000,000,000 VORTEX
 
 The total supply is **fixed at 1 billion tokens**. No minting function exists â€” the supply can only decrease through natural market dynamics and locked staking.
 
@@ -43,7 +43,7 @@ The total supply is **fixed at 1 billion tokens**. No minting function exists â€
 - Lock verified on-chain and publicly auditable
 
 ### Liquidity Protection
-- 5/5% buy/sell tax (4% jackpot / 1% team) discourages rapid trading and bot activity
+- 5/5% buy/sell tax (4% vortex / 1% team) discourages rapid trading and bot activity
 - 50% Luck penalty on unstaking discourages panic selling
 - Tier system rewards long-term holding with compounding advantages
 

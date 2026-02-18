@@ -15,7 +15,7 @@
 
 ## Core Mechanics
 
-* [Jackpot System](core-mechanics/jackpot-system.md)
+* [Vortex Draw System](core-mechanics/vortex-system.md)
 * [Raffle Passes](core-mechanics/raffle-passes.md)
 * [Luck Staking](core-mechanics/luck-staking.md)
 * [Micro-Loot System](core-mechanics/micro-loot-system.md)

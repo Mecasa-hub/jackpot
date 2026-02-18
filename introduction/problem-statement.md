@@ -1,5 +1,5 @@
 ---
-description: The problems JACPOT was built to solve
+description: The problems VORTEX was built to solve
 ---
 
 # The Problem
@@ -64,4 +64,4 @@ The market needs a protocol that:
 - ✅ Combines the thrill of a lottery with the depth of DeFi
 - ✅ Builds genuine community through shared goals
 
-**JACPOT is that protocol.**
+**VORTEX is that protocol.**
