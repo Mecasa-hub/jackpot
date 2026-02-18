@@ -22,7 +22,7 @@ The JACPOT protocol consists of **six core smart contracts** that interact to fo
 │  │   CONTRACT    │◄──►│   CONTRACT   │    │   CONTRACT   │   │
 │  │              │    │              │    │              │   │
 │  │ • ERC-20     │    │ • Luck Score │    │ • Pot mgmt   │   │
-│  │ • 5/5% tax  │────►│ • Decay      │    │ • Draw logic │   │
+│  │ • 5/5% tax (4/1 split) │────►│ • Decay      │    │ • Draw logic │   │
 │  │ • Max wallet │    │ • Tiers      │◄──►│ • Payouts    │   │
 │  │ • Max tx     │    │ • Streaks    │    │ • Rollover   │   │
 │  └──────┬───────┘    └──────────────┘    └──────┬───────┘   │
@@ -211,7 +211,7 @@ Emit DrawCompleted event
 
 ```solidity
 interface IRafflePass {
-    function purchase(uint8 tier, uint256 quantity) external; // Pay USDC, receive NFT
+    function purchase(uint8 tier, uint256 quantity) external; // Pay USDC, receive raffle entry
     function burnForDraw(address holder, uint256 tokenId) external; // Called by Jackpot
     function getEntries(uint8 tier) external pure returns (uint256);
 }

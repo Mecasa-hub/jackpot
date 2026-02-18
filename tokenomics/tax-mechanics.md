@@ -6,21 +6,25 @@ description: How the 5/5% tax works under the hood
 
 ## How Tax Collection Works
 
+The 5% buy/sell tax is split into two streams: **4% funds the Jackpot Pot** and **1% goes to the Team**. This split is deployer-adjustable via the smart contract.
+
 ### Buy Tax (5%)
 When a user buys JACPOT on a DEX:
 1. The swap is executed through the JACPOT smart contract
 2. 5% of the transaction value is calculated
 3. This 5% is automatically swapped to **USDC** via the DEX router
-4. The USDC is sent to the **Jackpot Contract**
-5. The user receives 95% of the expected tokens
+4. **4%** of the USDC is sent to the **Jackpot Pot**
+5. **1%** of the USDC is sent to the **Team wallet**
+6. The user receives 95% of the expected tokens
 
 ### Sell Tax (5%)
 When a user sells JACPOT on a DEX:
 1. The user initiates a sell of X tokens
 2. 5% of the tokens are intercepted by the contract
 3. These tokens are swapped to **USDC** via the DEX router
-4. The USDC is sent to the **Jackpot Contract**
-5. The remaining 95% of tokens are sold as normal
+4. **4%** of the USDC is sent to the **Jackpot Pot**
+5. **1%** of the USDC is sent to the **Team wallet**
+6. The remaining 95% of tokens are sold as normal
 
 ### Transfer Tax (0%)
 Wallet-to-wallet transfers are **tax-free**. This allows:
@@ -30,8 +34,6 @@ Wallet-to-wallet transfers are **tax-free**. This allows:
 
 ## Tax Flow Diagram
 
-![Tax Revenue Flow](../assets/diagram-tax-flow.png)
-
 ```
 User Buys JACPOT          User Sells JACPOT
        │                            │
@@ -40,15 +42,40 @@ User Buys JACPOT          User Sells JACPOT
        │                            │
        └────────────┬───────────────┘
                     │
-                    ▼
-            Jackpot Contract
-                    │
-                    ▼
-            Jackpot Pot Grows
-                    │
-                    ▼
-            Next Raffle Draw
+              ┌─────┴─────┐
+              │           │
+           4% (80%)    1% (20%)
+              │           │
+              ▼           ▼
+     ┌──────────────┐  ┌──────────┐
+     │  JACKPOT POT  │  │   TEAM   │
+     │  (Prize Pool) │  │  WALLET  │
+     └──────┬───────┘  └──────────┘
+            │
+   ┌────────┴────────┐
+   │                 │
+Winner Drawn?     No Winner?
+   │                 │
+   ▼                 ▼
+50% → Winner    15% → Stakers (USDC)
+35% → Rollover  85% → Rollover
+10% → LP/Buyback
+ 5% → Treasury
 ```
+
+> **Important:** The 4/1 split between Jackpot Pot and Team is **deployer-adjustable** via the smart contract. The default configuration directs 80% of tax revenue (4%) to the prize pool and 20% (1%) to the team.
+
+## Tax Revenue Examples
+
+| Daily Trading Volume | 5% Tax Collected | 4% → Jackpot Pot | 1% → Team |
+| --- | --- | --- | --- |
+| $50,000 | $2,500 | +$2,000/day | $500/day |
+| $100,000 | $5,000 | +$4,000/day | $1,000/day |
+| $500,000 | $25,000 | +$20,000/day | $5,000/day |
+| $1,000,000 | $50,000 | +$40,000/day | $10,000/day |
+| $5,000,000 | $250,000 | +$200,000/day | $50,000/day |
+
+> On days when no jackpot winner is drawn, 85% of the pot rolls over and continues growing with the next day\u2019s tax revenue.
 
 ## Anti-Gaming Measures
 

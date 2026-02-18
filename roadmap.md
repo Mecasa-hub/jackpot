@@ -1,163 +1,104 @@
 ---
-description: Development timeline and milestones for JACPOT
+description: JACPOT development roadmap and milestones
 ---
 
 # Roadmap
 
 ## Vision
 
-JACPOT is built in phases, each adding new layers of engagement, sustainability, and community governance. Our approach is **ship fast, iterate constantly, and let the community guide the direction.**
+JACPOT aims to become the **leading Engage-to-Win protocol** in DeFi — a self-sustaining ecosystem where active participation is rewarded with real, provably fair prizes every single day.
 
 ---
 
-## Phase 1: Foundation (Months 1-3)
+## Phase 1: Foundation 🏗️
+*Building the core infrastructure*
 
-### 🏗️ "Build the Engine"
+- [x] Whitepaper and tokenomics design
+- [x] GitBook documentation
+- [x] Community building (Telegram, X/Twitter, Discord)
+- [ ] Smart contract development
+  - [ ] ERC-20 token with 5/5% tax (4% jackpot / 1% team, deployer-adjustable)
+  - [ ] Luck Staking engine
+  - [ ] Two-tier daily draw system
+  - [ ] Chainlink VRF integration
+- [ ] Smart contract audit(s)
+- [ ] DApp UI/UX design
 
-| Milestone | Description | Status |
+---
+
+## Phase 2: Launch 🚀
+*Going live on Base*
+
+- [ ] Token launch on Base
+- [ ] Liquidity pool deployment (JACPOT/USDC)
+- [ ] Liquidity lock (12-month minimum)
+- [ ] DApp launch with core features:
+  - [ ] Luck Staking portal
+  - [ ] Raffle ticket purchasing
+  - [ ] Daily draw system (25 Small Wins + Conditional Jackpot)
+  - [ ] Mystery Crate claiming
+  - [ ] Daily Missions dashboard
+- [ ] Chainlink VRF live draws
+- [ ] CoinGecko / CoinMarketCap listings
+- [ ] First daily draws begin
+
+---
+
+## Phase 3: Growth 📈
+*Scaling the ecosystem*
+
+- [ ] Tier system activation (Bronze → Legendary)
+- [ ] Leaderboard and community rankings
+- [ ] Streak system with multipliers
+- [ ] Luck Shards marketplace (spend on boosts, shields, entries)
+- [ ] Treasury DeFi yield deployment (Aave, Compound)
+- [ ] Staker USDC reward distributions
+- [ ] Hype Vault activation for marketing campaigns
+- [ ] Partnership integrations
+- [ ] Influencer and KOL campaigns
+- [ ] First Seasonal Event
+
+---
+
+## Phase 4: Maturity 🏛️
+*Long-term sustainability and governance*
+
+- [ ] Pressure Mode system activation
+- [ ] Mega Draw mechanics (14-day forced draw)
+- [ ] Drought Bonus system
+- [ ] Governance framework for Diamond+ tier holders
+- [ ] Community-driven feature proposals
+- [ ] Cross-chain expansion exploration
+- [ ] Advanced analytics dashboard
+- [ ] Mobile-optimized DApp experience
+- [ ] SDK for third-party integrations
+
+---
+
+## Phase 5: Expansion 🌍
+*Beyond the core protocol*
+
+- [ ] Multi-chain deployment
+- [ ] Partner protocol integrations (shared draws, co-marketing)
+- [ ] Advanced gamification features
+- [ ] Community-created events and quests
+- [ ] DAO transition for protocol governance
+- [ ] Ecosystem grants program
+
+---
+
+## Key Milestones
+
+| Milestone | Target | Status |
 | --- | --- | --- |
-| Smart contract development | Token, Staking, Jackpot, Raffle Pass contracts | 🔄 In Progress |
-| Chainlink VRF integration | Provably fair randomness for draws and crates | 🔄 In Progress |
-| Security audit #1 | First independent audit of all core contracts | ⏳ Planned |
-| Security audit #2 | Second independent audit (different firm) | ⏳ Planned |
-| dApp frontend (MVP) | Core UI: swap, stake, buy passes, view pot | ⏳ Planned |
-| Testnet deployment | Full protocol on Base testnet | ⏳ Planned |
-| Community beta testing | Invite-only testing with bug bounty | ⏳ Planned |
-| Brand & website launch | Public website, social media, branding | ⏳ Planned |
+| Whitepaper Complete | Q1 2025 | ✅ Done |
+| Smart Contracts Audited | Q2 2025 | 🔄 In Progress |
+| Token Launch | Q2 2025 | ⏳ Planned |
+| First Daily Draw | Q2 2025 | ⏳ Planned |
+| 1,000 Daily Active Users | Q3 2025 | ⏳ Planned |
+| Treasury Yield Deployment | Q3 2025 | ⏳ Planned |
+| First Mega Draw | Q3 2025 | ⏳ Planned |
+| First Seasonal Event | Q4 2025 | ⏳ Planned |
+| Governance Launch | Q1 2026 | ⏳ Planned |
 
-### Deliverables
-- ✅ Audited smart contracts
-- ✅ Functional testnet deployment
-- ✅ Public website and documentation
-- ✅ Community channels (Discord, Twitter/X, Telegram)
-
----
-
-## Phase 2: Launch (Month 3-4)
-
-### 🚀 "Ignition"
-
-| Milestone | Description | Status |
-| --- | --- | --- |
-| Token launch | JACPOT token deployed on Base mainnet | ⏳ Planned |
-| Liquidity pool creation | Initial LP paired with USDC on Uniswap | ⏳ Planned |
-| LP lock | LP tokens locked for 12 months via Unicrypt | ⏳ Planned |
-| Staking goes live | Luck Staking contract activated | ⏳ Planned |
-| First Raffle Pass sale | Common through Mythic passes available | ⏳ Planned |
-| First Weekly Draw | Inaugural jackpot draw — Friday 20:00 UTC | ⏳ Planned |
-| Bug bounty program | Launched on Immunefi or equivalent | ⏳ Planned |
-| CoinGecko / CMC listing | Token tracked on major aggregators | ⏳ Planned |
-
-### Deliverables
-- ✅ Live mainnet protocol
-- ✅ First jackpot draw completed
-- ✅ Active staking with Luck accumulation
-- ✅ Bug bounty live
-
----
-
-## Phase 3: Engagement (Months 4-6)
-
-### 🎮 "The Engagement Engine"
-
-| Milestone | Description | Status |
-| --- | --- | --- |
-| Micro-Loot System launch | Daily Missions + Mystery Crates go live | ⏳ Planned |
-| Streak System activation | Consecutive daily claims tracked and rewarded | ⏳ Planned |
-| Mini Draws (Wednesday) | Silver+ tier exclusive draws begin | ⏳ Planned |
-| Leaderboard launch | Public Luck Score rankings | ⏳ Planned |
-| Referral system | On-chain referral tracking with Luck Shard rewards | ⏳ Planned |
-| Mobile-optimized dApp | Responsive design for mobile wallets | ⏳ Planned |
-| First Monthly Mega Draw | Boosted pot with treasury contribution | ⏳ Planned |
-
-### Deliverables
-- ✅ Full daily engagement loop operational
-- ✅ Multiple draw types running
-- ✅ Referral system driving organic growth
-- ✅ Mobile-friendly experience
-
----
-
-## Phase 4: Sustainability (Months 6-9)
-
-### 🛡️ "The Safety Net"
-
-| Milestone | Description | Status |
-| --- | --- | --- |
-| Treasury DeFi deployment | Capital deployed to Aave, Compound, Morpho | ⏳ Planned |
-| Hype Vault activation | Automated marketing fund operational | ⏳ Planned |
-| Pressure Mode implementation | Low-volume detection and Mega Draw mechanics | ⏳ Planned |
-| Drought Bonuses activation | Treasury-funded jackpot top-ups during slow periods | ⏳ Planned |
-| Community Quests launch | Collective goals with shared rewards | ⏳ Planned |
-| Treasury Dashboard | Public real-time view of treasury positions and yield | ⏳ Planned |
-| First Quarterly Championship | Largest regular draw event | ⏳ Planned |
-
-### Deliverables
-- ✅ Self-sustaining treasury generating yield
-- ✅ Anti-death-spiral mechanics operational
-- ✅ Full transparency dashboard
-- ✅ Community-driven growth mechanics
-
----
-
-## Phase 5: Governance (Months 9-12)
-
-### 🏛️ "Community Ownership"
-
-| Milestone | Description | Status |
-| --- | --- | --- |
-| Governance module launch | Diamond+ stakers can propose and vote | ⏳ Planned |
-| Treasury governance | Community votes on DeFi deployment strategy | ⏳ Planned |
-| Parameter governance | Community adjusts Pressure Mode thresholds, draw schedules | ⏳ Planned |
-| Quest governance | Community proposes and votes on Community Quests | ⏳ Planned |
-| Seasonal Events calendar | Community-voted event schedule for the year | ⏳ Planned |
-| First Anniversary Jackpot | Biggest draw of the year + commemorative NFTs | ⏳ Planned |
-
-### Deliverables
-- ✅ Decentralized governance operational
-- ✅ Community controls key protocol parameters
-- ✅ One full year of successful operation
-
----
-
-## Phase 6: Expansion (Year 2+)
-
-### 🌍 "Scale & Evolve"
-
-| Milestone | Description |
-| --- | --- |
-| Multi-chain deployment | Expand to additional EVM chains |
-| Partnership integrations | Collaborate with other DeFi protocols |
-| SDK / API | Allow third-party integrations with the Luck system |
-| Advanced gamification | New mission types, seasonal themes, collaborative raids |
-| RWA treasury exposure | Real-world asset yield through on-chain RWA protocols |
-| Protocol-owned marketing | Fully automated, governance-controlled marketing engine |
-| JACPOT V2 | Next-generation contracts based on Year 1 learnings |
-
----
-
-## Roadmap Visualization
-
-```
-Month:  1   2   3   4   5   6   7   8   9   10  11  12
-        │   │   │   │   │   │   │   │   │   │   │   │
-Phase 1 ████████████│   │   │   │   │   │   │   │   │
-  Foundation     │   │   │   │   │   │   │   │   │   │
-                 │   │   │   │   │   │   │   │   │   │
-Phase 2          ████│   │   │   │   │   │   │   │   │
-  Launch             │   │   │   │   │   │   │   │   │
-                     │   │   │   │   │   │   │   │   │
-Phase 3              █████████│   │   │   │   │   │   │
-  Engagement                  │   │   │   │   │   │   │
-                              │   │   │   │   │   │   │
-Phase 4                       █████████│   │   │   │   │
-  Sustainability                       │   │   │   │   │
-                                       │   │   │   │   │
-Phase 5                                █████████│   │   │
-  Governance                                    │   │   │
-                                                │   │   │
-Phase 6                                         ████████→
-  Expansion                                     (ongoing)
-```
-
-> This roadmap is a living document. Timelines may adjust based on audit results, market conditions, and community feedback. All changes will be communicated transparently.
+> 📌 **Note:** Dates are estimates and may shift based on development progress, audit timelines, and market conditions. The team prioritizes security and quality over speed.

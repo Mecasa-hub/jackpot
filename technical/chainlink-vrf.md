@@ -97,7 +97,7 @@ Mystery Crate outcomes also use Chainlink VRF:
 
 | Operation | Estimated VRF Cost |
 | --- | --- |
-| Weekly Draw | ~0.5 LINK |
+| Daily Draw | ~0.5 LINK |
 | Mini Draw | ~0.5 LINK |
 | Monthly Mega Draw | ~0.5 LINK |
 | Daily Mystery Crates (per user) | ~0.1 LINK |

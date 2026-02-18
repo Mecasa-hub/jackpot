@@ -1,118 +1,182 @@
 ---
-description: How to participate in raffle draws and maximize your winning chances
+description: How to participate in JACPOT's daily draws
 ---
 
-# Raffle Participation
+# Raffle Participation Guide
 
-## How Draws Work
+## Overview
 
-### Before the Draw
+JACPOT runs a **two-tier daily draw system** — 25 guaranteed Small Win winners every day, plus a conditional Jackpot draw. This guide explains how to participate, maximize your odds, and claim your prizes.
 
-1. **Buy Raffle Passes** — Choose your tier and quantity
-2. **Ensure tokens are staked** — Your Luck Score multiplies your odds
-3. **Maintain your streak** — Higher streak = higher Luck = better odds
-4. **Check the snapshot deadline** — Passes must be purchased before the cutoff
+---
 
-### During the Draw
+## How to Enter
 
-1. **Snapshot taken** — All valid passes and Luck Scores are recorded
-2. **VRF requested** — Chainlink generates a provably fair random number
-3. **Winner selected** — Weighted random selection based on passes × Luck
-4. **Prize distributed** — USDC sent directly to winner's wallet
-5. **Passes burned** — All entered passes are consumed
+### Step 1: Buy Raffle Tickets
 
-### After the Draw
+1. Navigate to the **Raffle** section in the DApp
+2. Select the number of tickets you want to purchase
+3. Pay in **USDC** (fixed price per ticket)
+4. Confirm the transaction
+5. You're automatically entered into today's draws
 
-1. **Check results** — Winner announced on dApp and social media
-2. **Verify fairness** — Use the "Verify Draw" tool to check VRF proof
-3. **Buy new passes** — For the next draw cycle
-4. **Pot refills** — 35% rollover + new tax revenue starts the next pot
+### Key Rules
 
-## Choosing Your Pass Tier
+| Rule | Detail |
+| --- | --- |
+| **Currency** | USDC only |
+| **Validity** | Current day only (expires 00:00 UTC) |
+| **Per-Wallet Cap** | Maximum tickets per wallet per day |
+| **Transferability** | Non-transferable |
+| **Refunds** | No refunds — all sales are final |
 
-### Budget Strategy ($5-$25/week)
+---
 
-- Buy 1-5 **Common** passes per draw
-- Focus on building Luck Score through staking and streaks
-- Your Luck multiplier compensates for fewer passes over time
-- Best for: Patient users building long-term advantage
+## The Two-Tier Draw System
 
-### Balanced Strategy ($25-$100/week)
+### 🎁 Tier 1: Daily Small Wins
 
-- Buy 1-2 **Rare** passes per draw
-- Better cost-per-entry than Common
-- Supplement with any free passes from Mystery Crates
-- Best for: Regular participants who want consistent odds
+**25 winners are selected every single day** — guaranteed, regardless of volume or jackpot conditions.
 
-### Aggressive Strategy ($100-$500/week)
+| Parameter | Value |
+| --- | --- |
+| **Winners Per Day** | 25 |
+| **Funding Source** | 10% of daily ticket sales |
+| **Selection Method** | Chainlink VRF (Luck-weighted) |
+| **Claim Requirement** | Share on X (Twitter) |
 
-- Buy **Epic** or **Legendary** passes
-- Significant cost-per-entry discount
-- Combined with high Luck Score = strong odds
-- Best for: Serious participants aiming to win
+#### Prize Distribution
 
-### Whale Strategy ($500+/week)
+| Category | Winners | Share of Pool |
+| --- | --- | --- |
+| 🥇 **Top Prize** | 1 | 50% |
+| 🥈 **Runner Up** | 4 | 35% |
+| 🥉 **Lucky Pick** | 10 | 10% |
+| 🎁 **Micro Win** | 10 | 5% |
 
-- Buy **Mythic** passes for best cost-per-entry
-- Guaranteed Mini Draw entry (Mythic perk)
-- Maximum entries per pass
-- Best for: High-conviction participants
+#### How to Claim Small Wins
 
-## Odds Calculator
+1. Check the **Winners** page in the DApp after the daily draw
+2. If you won, you'll see a **"Claim Prize"** button with a pre-filled X (Twitter) post
+3. **Post the share on X** — this is required to unlock your prize
+4. Once the post is verified, your USDC prize is released to your wallet
+5. You have **48 hours** to claim — unclaimed prizes roll back into the Small Wins pool
 
-The dApp provides a real-time **Odds Calculator**:
+> 📣 **Why share on X?** Every winner post is organic marketing that brings new users into the ecosystem. 25 daily winner posts create consistent social proof.
+
+---
+
+### 🎰 Tier 2: Jackpot Draw
+
+The main event — a single winner takes a massive prize from the Jackpot Pot.
+
+| Parameter | Value |
+| --- | --- |
+| **Winners** | 1 (if triggered) |
+| **Funding Source** | 4% of the 5% buy/sell tax (USDC) |
+| **Selection Method** | Chainlink VRF (Luck-weighted) |
+| **Trigger** | Internal protocol parameters met |
+
+#### When the Jackpot Triggers (Winner Drawn)
+
+| Allocation | Percentage | Destination |
+| --- | --- | --- |
+| 🏆 **Winner** | 50% | Sent to winner's wallet |
+| 🔄 **Rollover** | 35% | Stays in pot for next draw |
+| 🔥 **LP Buyback/Burn** | 10% | Token buyback and liquidity |
+| 🏦 **Treasury** | 5% | Operations and reserves |
+
+#### When No Winner is Drawn
+
+| Allocation | Percentage | Destination |
+| --- | --- | --- |
+| 🔄 **Rollover** | 85% | Stays in pot (grows the jackpot) |
+| 💰 **Staker Rewards** | 15% | Distributed to JACPOT stakers in USDC |
+
+> 💡 **Key Insight:** Even when nobody wins the jackpot, stakers earn USDC rewards. And the pot grows bigger, making the next draw even more exciting.
+
+---
+
+## How Luck Affects Your Odds
+
+Tickets are **not equal**. Your Luck Score multiplies the weight of every ticket you hold:
 
 ```
-┌─────────────────────────────────────────┐
-│         ODDS CALCULATOR                 │
-│                                         │
-│  Your Passes:     5 Rare (25 entries)   │
-│  Your Luck Tier:  Gold (2.0x)           │
-│  Your Weighted:   50 effective entries  │
-│                                         │
-│  Total Pool:      5,000 entries         │
-│                                         │
-│  Your Odds:       1.0% (1 in 100)       │
-│                                         │
-│  Current Pot:     $45,230 USDC          │
-│  Your Expected:   $452.30               │
-│                                         │
-│  [Buy More Passes]  [Boost Luck]        │
-└─────────────────────────────────────────┘
+Effective Entries = Tickets × Luck Score
 ```
 
-## Draw Types Comparison
+### Practical Example
 
-| Draw | When | Pot Source | Eligibility | Typical Pot |
+Assume today's draw has 5 participants:
+
+| Player | Tickets | Luck Score | Effective Entries | Win Chance |
 | --- | --- | --- | --- | --- |
-| Weekly | Friday 20:00 UTC | Tax + Pass sales | All pass holders | $10K-$100K+ |
-| Mini | Wednesday 20:00 UTC | Portion of main pot | Silver+ stakers | $1K-$10K |
-| Monthly Mega | 1st of month | Accumulated + treasury bonus | All pass holders | $50K-$500K+ |
-| Pressure Mega | After Pressure Mode | Accumulated during drought | All pass holders | Varies (often largest) |
-| Quarterly Championship | Every 3 months | Accumulated + treasury | All pass holders | Largest regular draw |
+| You (3 months staked) | 3 | 5,000 | 15,000 | 48.4% |
+| Whale (1 week staked) | 10 | 500 | 5,000 | 16.1% |
+| Veteran (6 months) | 2 | 8,000 | 16,000 | 51.6% |
+| Casual (no stake) | 5 | 100 | 500 | 1.6% |
+| Newbie (2 days) | 3 | 150 | 450 | 1.5% |
 
-## Winner Verification
+> **Takeaway:** The whale bought 10 tickets but has worse odds than you with 3 tickets. Luck Staking is the real competitive advantage.
 
-Every draw can be independently verified:
+---
 
-1. Go to **"Draw History"** on the dApp
-2. Click on any past draw
-3. View:
-   - Total entries and participants
-   - VRF request transaction hash
-   - VRF fulfillment transaction hash
-   - Random number generated
-   - Winner selection calculation
-   - Prize distribution transaction
-4. All data links to block explorer for independent verification
+## Pressure Mode & Mega Draws
 
-## Past Winners
+During low-volume periods, the protocol enters **Pressure Mode**:
 
-The **"Winner Wall"** displays:
-- Wallet address (abbreviated) of every winner
-- Prize amount won
-- Draw type and date
-- Winner's Luck Tier at time of win
-- Number of passes they held
+1. Standard jackpot draws **pause** to let the pot accumulate
+2. Trading taxes and treasury bonuses continue filling the pot
+3. **Daily Small Wins continue** — 25 winners every day, no interruption
+4. After **14 days**, a **forced Mega Draw** guarantees a jackpot winner
 
-> The Winner Wall serves as **social proof** — real people winning real money, verifiable on-chain.
+### Why This Is Good for You
+- The pot grows larger during Pressure Mode
+- Fewer participants = better individual odds
+- Mega Draws create massive excitement and social buzz
+- Your Luck Score keeps compounding while you wait
+
+---
+
+## Strategies for Raffle Participation
+
+### 🎯 The Daily Player
+- Buy 1–3 tickets every day
+- Maintain high Luck Score through staking and streaks
+- Consistent entries compound your chances over time
+- **Best for:** Regular participants who want steady odds
+
+### 🐋 The Big Spender
+- Buy maximum tickets on high-pot days
+- Still limited by per-wallet caps
+- Without Luck Staking, raw ticket volume has diminishing returns
+- **Best for:** Users who prefer volume over consistency
+
+### 🧠 The Strategist
+- Monitor pot size and participation levels
+- Buy more tickets when the pot is large and participation is low
+- Use Luck Shards for 24h Luck Boosts before big draws
+- Time entries around Pressure Mode Mega Draws
+- **Best for:** Analytical players who optimize expected value
+
+---
+
+## Frequently Asked Questions
+
+**Q: Can I buy tickets without staking?**
+A: Yes. Anyone can buy tickets. But without Luck Staking, your effective entries are much lower.
+
+**Q: What happens to my tickets if the jackpot doesn't trigger?**
+A: Your tickets are still valid for the Small Wins draw. The jackpot portion simply rolls over.
+
+**Q: Can I buy tickets for future days?**
+A: No. Tickets are valid for the current day only.
+
+**Q: Is there a minimum number of tickets to enter?**
+A: Yes — 1 ticket is the minimum entry.
+
+**Q: How do I know if I won?**
+A: Check the Winners page in the DApp. Winners also receive notifications.
+
+**Q: What if I forget to share on X within 48 hours?**
+A: Your Small Win prize rolls back into the pool. Jackpot wins are auto-claimed.

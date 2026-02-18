@@ -1,87 +1,136 @@
 ---
-description: How to get started with JACPOT in 5 minutes
+description: Your first steps in the JACPOT ecosystem
 ---
 
 # Getting Started
 
-## Prerequisites
+## Welcome to JACPOT! 🎰
 
-![JACPOT System Overview](../assets/diagram-architecture.png)
+This guide walks you through everything you need to start participating in the JACPOT ecosystem — from buying your first tokens to entering your first daily draw.
 
-Before you begin, you'll need:
+---
 
-- A Web3 wallet (MetaMask, Rabby, Coinbase Wallet, etc.)
-- ETH for gas fees
-- USDC for purchasing Raffle Passes
-- The JACPOT dApp URL: app.jacpot.io
+## Step 1: Set Up Your Wallet
 
-## Step-by-Step Guide
+### Requirements
+- A Web3 wallet (MetaMask, Coinbase Wallet, or any WalletConnect-compatible wallet)
+- Connected to the **Base** network
+- Some ETH on Base for gas fees
+- USDC on Base for purchasing raffle tickets
 
-### Step 1: Buy JACPOT Tokens
+### Adding Base Network
+If Base isn't already in your wallet:
 
-1. Go to the JACPOT dApp
-2. Click **"Buy JACPOT"**
-3. Connect your wallet
-4. Enter the amount of ETH or USDC to swap
-5. Confirm the transaction
-6. You'll receive JACPOT tokens (minus 5% buy tax)
+| Parameter | Value |
+| --- | --- |
+| Network Name | Base |
+| RPC URL | https://mainnet.base.org |
+| Chain ID | 8453 |
+| Currency Symbol | ETH |
+| Block Explorer | https://basescan.org |
 
-> The 5% tax is automatically collected in USDC and sent to the Jackpot Pot.
+---
 
-### Step 2: Stake Your Tokens
+## Step 2: Buy JACPOT Tokens
 
-1. Navigate to the **"Stake"** section
-2. Click **"Approve JACPOT"** (first time only)
-3. Enter the amount to stake (we recommend staking 100% for maximum Luck)
-4. Click **"Stake"**
-5. Confirm the transaction
-6. Your Luck Score begins accumulating immediately!
+1. Visit the JACPOT DApp or your preferred Base DEX
+2. Swap ETH or USDC for JACPOT tokens
+3. Note: A **5% buy tax** is applied — 4% goes to the **Jackpot Pot** and 1% goes to the **Team**
 
-### Step 3: Claim Your First Mystery Crate
+> 💡 **Tip:** The buy tax funds the jackpot that you could win. Think of it as your contribution to the prize pool.
 
-1. Go to the **"Micro-Loot"** section
-2. Click **"Open Daily Crate"**
-3. Confirm the transaction (small gas fee)
-4. See what you got! (Common, Rare, Epic, Legendary, or Mythic)
-5. Your streak counter starts at 1
+---
 
-### Step 4: Complete Daily Missions
+## Step 3: Stake Your Tokens
 
-1. Check the **"Missions"** tab for today's 3 missions
-2. Complete each mission (hold, engage, refer, etc.)
-3. Claim your Luck Shards for each completed mission
-4. Complete all 3 for the "Perfect Day" bonus!
+Staking is where the magic happens. Your staked tokens earn **Luck** — a score that multiplies your odds in every draw.
 
-### Step 5: Buy Raffle Passes
+1. Navigate to the **Staking** section in the DApp
+2. Choose the amount of JACPOT tokens to stake
+3. Confirm the transaction
+4. Your Luck Score begins accumulating immediately
 
-1. Navigate to the **"Raffle"** section
-2. Choose your pass tier (Common to Mythic)
-3. Pay with USDC
-4. Your pass is minted as an NFT in your wallet
-5. You're entered into the next draw!
+### What You Get From Staking
 
-### Step 6: Wait for the Draw
+| Benefit | Description |
+| --- | --- |
+| 🍀 **Luck Score** | Accumulates over time, multiplies your raffle odds |
+| 🗡️ **Daily Missions** | Unlocks daily tasks that earn Luck Shards |
+| 🎁 **Mystery Crates** | Daily claimable rewards with tiered rarity |
+| 🏆 **Tier Progression** | Higher tiers unlock exclusive draws and better rewards |
+| 💰 **USDC Rewards** | Share of ticket sales and treasury yield |
 
-- **Weekly Draw:** Every Friday at 20:00 UTC
-- **Mini Draw:** Every Wednesday at 20:00 UTC (Silver+ tier)
-- Check the countdown timer on the dApp
-- Your odds = Your Passes × Your Luck Multiplier
+> ⚠️ **Important:** Unstaking triggers a **50% Luck Decay** penalty. Stake with a long-term mindset for the best results.
 
-## Quick Reference
+---
 
-| Action | Where | Frequency |
+## Step 4: Buy Raffle Tickets
+
+Raffle tickets are your entry into the daily draws.
+
+1. Navigate to the **Raffle** section in the DApp
+2. Choose the number of tickets to purchase (paid in USDC)
+3. Confirm the transaction
+4. You're automatically entered into today's draws
+
+### Key Details
+- Tickets are **valid for the current day only** — they expire at 00:00 UTC
+- Each ticket's effective weight is multiplied by your **Luck Score**
+- **Per-wallet daily caps** apply to prevent whale domination
+- Ticket revenue goes to the **Treasury** (not the Jackpot Pot)
+
+---
+
+## Step 5: Engage Daily
+
+Maximize your odds by completing daily activities:
+
+### Daily Checklist
+
+- [ ] 🎁 Claim your Mystery Crate
+- [ ] 📊 Check the leaderboard
+- [ ] 🎟️ Buy raffle tickets
+- [ ] 🍀 Check your Luck Score
+- [ ] 🔥 Maintain your streak
+
+Completing all daily missions earns you **Luck Shards** that further boost your Luck Score. Consecutive daily engagement builds a **streak multiplier** — up to 3.0x at 90+ days.
+
+---
+
+## Step 6: Check the Draws
+
+Every day, two types of draws occur:
+
+### 🎁 Small Wins (25 Winners Daily)
+- Guaranteed every day regardless of volume
+- Winners selected via Chainlink VRF (Luck-weighted)
+- **Must share on X (Twitter) to claim** — this drives organic growth
+- Prizes distributed across 4 tiers (Top Prize, Runner Up, Lucky Pick, Micro Win)
+
+### 🎰 Jackpot Draw (Conditional)
+- Triggers when internal protocol parameters are met
+- Funded by the 4% jackpot portion of the 5% buy/sell tax
+- If no winner is drawn: 85% rolls over, 15% goes to stakers
+- During Pressure Mode: pot grows until a forced Mega Draw at 14 days
+
+---
+
+## Your First Week Plan
+
+| Day | Action | Why |
 | --- | --- | --- |
-| Buy tokens | Swap page | As needed |
-| Stake tokens | Stake page | Once (then leave staked) |
-| Claim crate | Micro-Loot page | Daily |
-| Complete missions | Missions tab | Daily |
-| Buy raffle passes | Raffle page | Before each draw |
-| Check results | Draw History page | After each draw |
+| Day 1 | Buy JACPOT + Stake + Buy first tickets | Start accumulating Luck immediately |
+| Day 2 | Claim crate + Complete all missions | Begin your streak |
+| Day 3–7 | Daily missions + Buy tickets | Build streak multiplier, grow Luck Score |
+| Day 7+ | Maintain streak, never unstake | Your compounding advantage grows daily |
+
+---
 
 ## Tips for New Users
 
-1. **Stake early** — Luck compounds over time. The sooner you stake, the more Luck you accumulate.
-2. **Never break your streak** — Claim your crate every day. The streak multiplier is powerful.
-3. **Complete all 3 missions** — The "Perfect Day" bonus adds up over time.
-4. **Don't unstake** — The 50% Luck Decay penalty is severe. Only unstake if absolutely necessary.
-5. **Buy passes regularly** — Even a single Common pass ($5) gives you a chance to win.
+1. **Stake early** — Luck accumulates over time; every day counts
+2. **Never break your streak** — The streak multiplier is one of your biggest advantages
+3. **Don't unstake** — The 50% Luck penalty is severe; think long-term
+4. **Buy tickets daily** — Even 1 ticket per day keeps you in every draw
+5. **Check the leaderboard** — See where you stand and what tier you're approaching
+6. **Save Luck Shards strategically** — Decide between passive multiplier and spending on boosts

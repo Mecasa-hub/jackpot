@@ -18,11 +18,11 @@ Unlike traditional yield farming or reflection tokens, JACPOT rewards **consiste
 
 | Feature | Description |
 | --- | --- |
-| 🎲 **Jackpot System** | A continuously growing prize pool funded by trading tax, drawn via provably fair Chainlink VRF |
+| 🎲 **Two-Tier Daily Draws** | 25 guaranteed Small Win winners every day + a conditional Jackpot draw — all via Chainlink VRF |
 | 🍀 **Luck Staking** | Stake tokens to earn Luck — a non-transferable score that multiplies your raffle odds |
 | 🗡️ **Daily Missions** | Complete on-chain tasks daily to earn Luck Shards and Mystery Crates |
 | 🎁 **Mystery Crates** | Daily claimable rewards with tiered rarity — from Luck Shards to USDC micro-rewards |
-| 🏟️ **Raffle Passes** | NFT-based raffle entries with rarity tiers and multiplied odds |
+| 🎟️ **Raffle Tickets** | Simple on-chain entries that put you in the draw — no complexity, just buy and play |
 | 🌡️ **Pressure Mode** | Low volume? The pot keeps growing until it explodes in a Mega Draw |
 | 🏦 **Smart Treasury** | On-chain DeFi yield funds the ecosystem sustainably |
 | 📣 **Hype Vault** | Self-healing marketing fund that activates during slow periods |
@@ -37,8 +37,9 @@ Most DeFi protocols suffer from the same problem: they emit tokens to attract us
 
 * **No token emissions** — Staking doesn't mint new tokens
 * **No inflationary rewards** — You earn Luck (probability), not money
-* **Real revenue** — Jackpots and rewards are funded by trading tax and treasury yield
+* **Real revenue** — Jackpots are funded by trading tax; staker rewards and operations are funded by ticket sales and treasury yield
 * **Engagement > Holding** — Active participants have exponentially better odds than passive holders
+* **Daily winners** — 25 people win prizes every single day and share on X to claim
 
 ---
 

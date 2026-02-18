@@ -1,176 +1,155 @@
 ---
-description: Daily missions, mystery crates, and the engagement loop that keeps users coming back
+description: Daily engagement through missions, crates, and shards
 ---
 
 # Micro-Loot System
 
 ## Overview
 
-The Micro-Loot System is JACPOT's daily engagement engine. It gives every staker a reason to return to the protocol **every single day** through missions, mystery crates, and streak rewards.
+The **Micro-Loot System** is JACPOT's daily engagement layer — a gamified set of mechanics designed to keep users returning every day, even between major jackpot draws. It consists of three interconnected components:
 
-> No free giveaways. Everything is earned through engagement.
+1. **Daily Missions** — Simple tasks that reward Luck Shards
+2. **Mystery Crates** — Daily claimable loot boxes with tiered rewards
+3. **Luck Shards** — Bonus points that boost your Luck Score
+
+> **Design Philosophy:** The Micro-Loot System ensures that every day in the JACPOT ecosystem feels rewarding, regardless of whether you win the jackpot.
+
+---
 
 ## Daily Missions
 
-Every day at 00:00 UTC, three missions are generated for each staker. Missions are simple on-chain verifiable actions:
+### What Are Daily Missions?
 
-### Mission Types
+Daily Missions are simple on-chain tasks that reset every 24 hours. Completing them earns **Luck Shards** and maintains your **engagement streak**.
 
-| Mission | Action Required | Reward | Verification |
-| --- | --- | --- | --- |
-| 🛡️ **Hold Mission** | Hold your staked position for 24h without unstaking | 1 Luck Shard | Contract state check |
-| ⚡ **Engage Mission** | Perform any protocol interaction (buy pass, claim crate, vote) | 1 Luck Shard | Transaction verification |
-| 🤝 **Social Mission** | Refer a new wallet that stakes or buys a pass | 2 Luck Shards | Referral contract |
-| 💧 **LP Mission** | Provide liquidity above threshold | 3 Luck Shards | LP position check |
-| 🎯 **Bonus Mission** | Random special task (changes daily) | 2-5 Luck Shards | Varies |
+### Available Missions
 
-### Mission Rules
+| Mission | Task | Reward |
+| --- | --- | --- |
+| 🎁 **Crate Collector** | Claim your daily Mystery Crate | 10 Luck Shards |
+| 📊 **Leaderboard Check** | View the community leaderboard | 5 Luck Shards |
+| 🔥 **Streak Keeper** | Log in on consecutive days | 5–50 Luck Shards (scales with streak) |
+| 🎟️ **Ticket Buyer** | Purchase at least 1 raffle ticket | 15 Luck Shards |
+| 🍀 **Luck Checker** | Check your current Luck Score | 5 Luck Shards |
 
-- Each user receives **exactly 3 missions per day** (randomly selected from the pool)
-- Missions reset at **00:00 UTC**
-- Uncompleted missions **expire** — no carryover
-- Mission completion is verified **on-chain** — no honor system
-- You must be a **Bronze tier or above** staker to access missions
+### Streak System
 
-### Mission Completion Flow
+Consecutive daily engagement is rewarded with escalating bonuses:
 
-```
-00:00 UTC → 3 Missions Generated
-    │
-    ├── Complete Mission 1 → +1 Luck Shard
-    ├── Complete Mission 2 → +1 Luck Shard  
-    └── Complete Mission 3 → +2 Luck Shards
-    │
-    ▼
-All 3 Complete? → "Perfect Day" Bonus → +2 Extra Luck Shards
-    │
-    ▼
-23:59 UTC → Missions Expire
-```
+| Streak Length | Daily Bonus | Cumulative Effect |
+| --- | --- | --- |
+| 1–7 days | 1.0x base | Building foundation |
+| 8–14 days | 1.25x Luck Shard earnings | Noticeable boost |
+| 15–30 days | 1.5x Luck Shard earnings | Significant advantage |
+| 31–60 days | 2.0x Luck Shard earnings | Major competitive edge |
+| 61–90 days | 2.5x Luck Shard earnings | Elite status |
+| 90+ days | 3.0x Luck Shard earnings | Maximum streak bonus |
 
-> Completing all 3 missions in a day grants a **"Perfect Day" bonus** of 2 extra Luck Shards.
+> ⚠️ **Missing a single day resets your streak to 0.** This creates a powerful daily habit loop.
+
+---
 
 ## Mystery Crates
 
-![Mystery Crate Rarity Distribution](../assets/chart-crate-rarity.png)
+### What Are Mystery Crates?
 
-Mystery Crates are daily claimable reward boxes available to all stakers.
+Mystery Crates are **daily claimable rewards** available to all JACPOT stakers. Each crate contains a randomized reward based on a tiered rarity system.
 
-### How to Claim
+### Rarity Tiers
 
-1. Must have tokens staked (any amount)
-2. Navigate to the Micro-Loot section of the dApp
-3. Click "Open Crate" (one per day)
-4. Pay a small gas fee (the crate itself is free for stakers)
-5. Chainlink VRF determines the contents
-6. Reward is delivered instantly
-
-### Crate Drop Rates
-
-| Rarity | Probability | Contents |
+| Rarity | Drop Rate | Possible Contents |
 | --- | --- | --- |
-| 🟢 **Common** | 60% | 1 Luck Shard |
-| 🔵 **Rare** | 25% | 3 Luck Shards |
-| 🟣 **Epic** | 12% | 1 Free Common Raffle Pass |
-| 🟡 **Legendary** | 2.5% | Micro-USDC reward ($1-$5 from treasury yield) |
-| 🔴 **Mythic** | 0.5% | 10 Luck Shards + 1 Free Rare Raffle Pass |
+| ⬜ **Common** | 60% | 5–20 Luck Shards |
+| 🟦 **Uncommon** | 25% | 25–75 Luck Shards |
+| 🟪 **Rare** | 10% | 100–250 Luck Shards, small USDC micro-reward |
+| 🟨 **Epic** | 4% | 500+ Luck Shards, USDC micro-reward, bonus ticket entry |
+| 🟧 **Legendary** | 1% | 1,000+ Luck Shards, significant USDC reward, guaranteed jackpot entry |
 
-### Priority Crates (Gold+ Tier)
+### Crate Mechanics
 
-Stakers at Gold tier and above receive **Priority Mystery Crates** with improved drop rates:
+- **One crate per day** per wallet (resets at 00:00 UTC)
+- **Must be claimed manually** — unclaimed crates expire after 24 hours
+- **Tier affects crate quality** — higher staking tiers receive better base odds
+- **Streak bonus** — longer streaks increase the probability of higher-rarity crates
 
-| Rarity | Standard Rate | Priority Rate |
-| --- | --- | --- |
-| 🟢 Common | 60% | 40% |
-| 🔵 Rare | 25% | 30% |
-| 🟣 Epic | 12% | 20% |
-| 🟡 Legendary | 2.5% | 8% |
-| 🔴 Mythic | 0.5% | 2% |
+### Tier-Based Crate Bonuses
 
-> Priority Crates are a **major incentive** to reach Gold tier through consistent staking.
+| Tier | Rare+ Chance | Epic+ Chance | Legendary Chance |
+| --- | --- | --- | --- |
+| 🥉 Bronze | 15% | 5% | 1% |
+| 🥈 Silver | 20% | 7% | 1.5% |
+| 🥇 Gold | 25% | 10% | 2% |
+| 💎 Diamond | 30% | 12% | 3% |
+| 👑 Legendary | 35% | 15% | 5% |
 
-## Streak System
-
-![Streak Multiplier Curve](../assets/chart-streak-multiplier.png)
-
-The Streak System rewards **consecutive daily engagement**.
-
-### How Streaks Work
-
-- Claim your Mystery Crate on consecutive days to build a streak
-- Your streak number increases by 1 each day you claim
-- Missing a day **resets your streak to 0**
-
-### Streak Multiplier
-
-Your streak directly multiplies your Luck accumulation rate:
-
-| Streak Days | Multiplier | Effect |
-| --- | --- | --- |
-| 0-6 | 1.0x | Base rate |
-| 7-13 | 1.1x | 10% faster Luck accumulation |
-| 14-20 | 1.2x | 20% faster |
-| 21-29 | 1.5x | 50% faster |
-| 30+ | 2.0x | **Double** Luck accumulation (maximum) |
-
-### Streak Milestones
-
-Special one-time rewards at streak milestones:
-
-| Milestone | Reward |
-| --- | --- |
-| 7-day streak | 5 bonus Luck Shards |
-| 30-day streak | 1 Free Epic Raffle Pass |
-| 90-day streak | "Dedicated" NFT badge (soulbound) |
-| 180-day streak | 1 Free Legendary Raffle Pass |
-| 365-day streak | "OG Believer" NFT badge + permanent 2.5x Luck multiplier |
-
-> The 365-day streak reward is **extremely powerful** — a permanent 2.5x multiplier that stacks with the 2.0x streak multiplier for a total of **5.0x** Luck accumulation rate.
+---
 
 ## Luck Shards
 
-Luck Shards are the micro-currency of the engagement system.
+### What Are Luck Shards?
 
-### Properties
+Luck Shards are **non-transferable bonus points** that enhance your Luck Score. They are earned exclusively through daily engagement — missions, crates, and special events.
 
-| Property | Value |
-| --- | --- |
-| **Transferable** | No |
-| **Tradeable** | No |
-| **Expirable** | No — once earned, they're permanent |
-| **Tokenized** | No — stored as a contract mapping |
-| **Purpose** | Additive bonus to Luck Score |
+### How Shards Boost Your Luck
 
-### Earning Luck Shards
+Luck Shards operate through a **hybrid utility model**:
 
-| Source | Shards per Day (Typical) |
-| --- | --- |
-| Daily Missions (3/3 complete) | 4-8 shards |
-| Perfect Day Bonus | 2 shards |
-| Mystery Crate | 1-10 shards |
-| Streak Milestones | 5 shards (one-time) |
-| Community Quests | Varies |
-
-**Estimated daily earnings for an active user: 7-20 Luck Shards**
-
-### Shards vs. Base Luck
-
-Luck Shards are **additive**, not multiplicative. They provide a meaningful boost for smaller stakers but don't overshadow the compounding effect of large, long-term stakes:
+#### 1. Multiplicative Boost
+Shards provide a percentage bonus on top of your base Luck Score:
 
 ```
-Total Luck = (Base Luck from Staking) + (Total Luck Shards)
+Effective Luck = Base Luck × (1 + Shard Multiplier)
 ```
 
-A user with 10,000 tokens staked for 90 days has ~1,800,000 base Luck. Their 300 accumulated shards add 300 — meaningful but not dominant. This ensures that **staking remains the primary driver** while missions provide supplementary engagement.
-
-## Funding Source
-
-All Micro-Loot rewards are funded sustainably:
-
-| Reward Type | Funded By |
+| Shards Accumulated | Multiplier Bonus |
 | --- | --- |
-| Luck Shards | No cost — they're on-chain score points |
-| Free Raffle Passes | Protocol mints them (no USDC cost, just entry allocation) |
-| USDC micro-rewards | Treasury DeFi yield |
+| 0–100 | +0% |
+| 101–500 | +2% |
+| 501–2,000 | +5% |
+| 2,001–10,000 | +10% |
+| 10,001–50,000 | +15% |
+| 50,001+ | +20% (max) |
 
-> **Zero token emissions.** The Micro-Loot System costs the protocol almost nothing to operate while driving massive daily engagement.
+#### 2. Spendable Currency
+Shards can also be **spent** on ecosystem perks:
+
+| Item | Cost | Effect |
+| --- | --- | --- |
+| 🎟️ **Bonus Ticket Entry** | 500 Shards | 1 additional raffle entry for the day |
+| ⚡ **Luck Boost (24h)** | 1,000 Shards | 1.5x Luck Score for 24 hours |
+| 🎁 **Premium Crate** | 2,500 Shards | Guaranteed Rare+ crate |
+| 🔥 **Streak Shield** | 5,000 Shards | Protects your streak for 1 missed day |
+
+> **Strategic Choice:** Players must decide whether to accumulate shards for the passive multiplier or spend them for immediate tactical advantages.
+
+---
+
+## Engagement Loop
+
+The Micro-Loot System creates a self-reinforcing daily habit:
+
+```
+Log In → Complete Missions → Earn Shards → Claim Crate → Boost Luck → Better Odds → Win → Share on X → Return Tomorrow
+```
+
+### Why This Works
+
+| Mechanic | Psychological Driver |
+| --- | --- |
+| Daily Missions | **Routine formation** — simple tasks create habits |
+| Mystery Crates | **Variable reward** — unpredictable rewards are more engaging than fixed ones |
+| Streak System | **Loss aversion** — fear of losing streak progress drives daily returns |
+| Luck Shards | **Progress tracking** — visible accumulation creates sense of advancement |
+| Tier Progression | **Status seeking** — public leaderboard creates social motivation |
+| 25 Daily Winners | **Proximity to winning** — seeing others win daily makes it feel achievable |
+
+---
+
+## Key Takeaways
+
+- ✅ **Daily engagement** is rewarded with Luck Shards that meaningfully boost winning odds
+- ✅ **Mystery Crates** provide variable daily rewards that keep the experience fresh
+- ✅ **Streak system** creates powerful daily habit loops with escalating bonuses
+- ✅ **Shards have dual utility** — passive multiplier OR spendable currency
+- ✅ **Tier integration** ensures higher-tier stakers get progressively better engagement rewards
+- ✅ **Zero inflation** — all rewards are probability-based or funded by real revenue

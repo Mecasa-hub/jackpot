@@ -6,89 +6,110 @@ description: All revenue streams and how they flow through the JACPOT ecosystem
 
 ## Revenue Streams
 
-JACPOT generates revenue from **four distinct sources**, ensuring the protocol is never dependent on a single income stream.
+JACPOT operates on a **dual-stream revenue model** with clear separation between the Jackpot Pot and the Treasury.
 
-### Stream 1: Trading Tax
+### Stream 1: Trading Tax → Jackpot Pot
 
 | Detail | Value |
 | --- | --- |
 | **Rate** | 5% buy / 5% sell |
 | **Currency** | Collected in USDC |
-| **Destination** | 100% to Jackpot Pot |
-| **Volume Dependent** | Yes |
+| **Destination** | 4% → Jackpot Pot, 1% → Team |
+| **Purpose** | Funds the daily jackpot prize pool |
 
-This is the primary revenue driver during periods of active trading.
+The 5% buy/sell tax on all JACPOT token trades is split: **4% flows to the Jackpot Pot** and **1% goes to the Team**. This split is deployer-adjustable. The 4% portion is the primary funding source for jackpot prizes.
 
-### Stream 2: Raffle Pass Sales
+### Stream 2: Raffle Ticket Sales → Treasury
 
 | Detail | Value |
 | --- | --- |
-| **Pricing** | $5 - $1,000 per pass (tiered) |
+| **Pricing** | $5 – $1,000 per ticket (tiered) |
 | **Currency** | USDC |
-| **Destination** | 90% Jackpot Pot / 10% LP & Buyback |
-| **Volume Dependent** | Partially (driven by jackpot size) |
+| **Destination** | 100% to Treasury |
+| **Purpose** | Funds operations, small wins, staker rewards, and DeFi yield |
 
-Raffle Pass revenue scales with jackpot attractiveness — bigger pots drive more pass sales.
+All raffle ticket revenue flows directly to the Treasury — the central hub that manages ecosystem allocations.
 
-### Stream 3: Treasury Yield
+### Stream 3: External Revenue → Treasury
 
 | Detail | Value |
 | --- | --- |
-| **Source** | DeFi protocol deployments |
-| **Target APY** | 5-15% blended |
+| **Source** | DeFi protocol deployments, partnerships |
+| **Target APY** | 5–15% blended |
 | **Currency** | Various (converted to USDC) |
-| **Destination** | Crate rewards, Hype Vault, Drought Bonuses, Operations |
-| **Volume Dependent** | No — this is the volume-independent safety net |
+| **Destination** | Treasury |
+| **Purpose** | Sustainable yield generation independent of trading volume |
 
 Treasury yield is the **critical stabilizer** — it generates revenue regardless of trading activity.
 
-### Stream 4: LP Fees
+### Stream 4: LP Fees → Liquidity
 
 | Detail | Value |
 | --- | --- |
 | **Source** | Protocol-owned liquidity positions |
 | **Currency** | JACPOT + USDC |
 | **Destination** | Compounds back into LP |
-| **Volume Dependent** | Yes |
-
-LP fees from protocol-owned liquidity compound automatically, deepening the liquidity floor over time.
+| **Purpose** | Deepens liquidity floor over time |
 
 ## Revenue Flow Diagram
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                    REVENUE SOURCES                       │
-├──────────┬──────────┬──────────────┬───────────────────┤
-│ Buy Tax  │ Sell Tax │ Raffle Sales │ Treasury Yield    │
-│ (5%)     │ (5%)     │ ($5-$1000)   │ (DeFi protocols)  │
-│ USDC     │ USDC     │ USDC         │ USDC              │
-└────┬─────┴────┬─────┴──────┬───────┴────────┬──────────┘
-     │          │            │                │
-     ▼          ▼            ▼                ▼
-┌─────────────────────┐ ┌────────┐  ┌─────────────────────┐
-│   JACKPOT POT       │ │LP &    │  │  ECOSYSTEM FUND     │
-│   (100% of tax +    │ │Buyback │  │  (Treasury yield)   │
-│    90% of passes)   │ │(10% of │  │                     │
-│                     │ │passes) │  ├──────────┬──────────┤
-│   ┌─────────────┐   │ └────────┘  │Crate     │Hype      │
-│   │ Weekly Draw  │   │            │Rewards   │Vault     │
-│   │ Mini Draw    │   │            │(40%)     │(25%)     │
-│   │ Mega Draw    │   │            ├──────────┼──────────┤
-│   └──────┬──────┘   │            │Drought   │Operations│
-│          │          │            │Bonus     │(10%)     │
-│          ▼          │            │(20%)     │          │
-│   ┌─────────────┐   │            ├──────────┼──────────┤
-│   │Winner: 50%  │   │            │Reserve Growth (5%)  │
-│   │Rollover: 35%│   │            └─────────────────────┘
-│   │LP/Buy: 10%  │   │
-│   │Treasury: 5% │   │
-│   └─────────────┘   │
-└─────────────────────┘
+┌──────────────────────┐     ┌──────────────────────┐
+│  JACPOT TOKEN TRADING │     │   RAFFLE TICKET SALES │
+│  (Buy/Sell on DEX)    │     │   ($5, $25, $100 etc) │
+│                       │     │                       │
+│   5% Tax (USDC)       │     │   100% of revenue     │
+└──────────┬────────────┘     └──────────┬────────────┘
+           │                              │
+     ┌─────┴─────┐                        │
+     │           │                        │
+  4% (80%)    1% (20%)                    │
+     │           │                        │
+     ▼           ▼                        ▼
+┌──────────┐ ┌────────┐      ┌──────────────────┐
+│ JACKPOT  │ │  TEAM  │      │    TREASURY       │
+│   POT    │ │ WALLET │      │  (Central Hub)    │
+│(Prize    │ └────────┘      │                   │
+│  Pool)   │◄────────────────│  Allocates:       │
+│          │   funds pot     │  • Small Wins 10% │
+└──────────┘                 │  • Staker Rewards  │
+                             │  • Dev costs       │
+                             │  • DeFi yield      │
+                             └──────────────────┘
+```
+
+> **Key principle:** The Jackpot Pot and Treasury are **separate entities**. Trading tax feeds the jackpot. Ticket sales feed the treasury. This ensures the prize pool grows predictably from organic trading activity.
+
+## Treasury Allocation (from Ticket Sales)
+
+The Treasury receives 100% of raffle ticket revenue and allocates it daily:
+
+| Allocation | Percentage | Purpose |
+| --- | --- | --- |
+| **Small Wins Pool** | 10% | Daily tiered prizes distributed to multiple winners |
+| **Staker Rewards** | 5% | USDC distributed to JACPOT stakers |
+| **Development** | 5% | Dev team costs and ongoing improvements |
+| **Treasury Reserves** | 5% | Operational reserves and emergency fund |
+| **DeFi Yield** | 75% | Deployed to DeFi protocols for sustainable yield |
+
+### Example: Daily Treasury Flow
+
+```
+Daily Ticket Sales: $10,000
+         │
+         ▼
+    100% → TREASURY
+         │
+    Treasury allocates:
+         │
+         ├── 10% ($1,000) → Small Wins Pool (25 daily winners)
+         ├──  5% ($500)   → Staker Rewards (USDC)
+         ├──  5% ($500)   → Development
+         ├──  5% ($500)   → Treasury Reserves
+         └── 75% ($7,500) → DeFi Yield Deployments
 ```
 
 ## Revenue Projections
-
-![Monthly Revenue Projections](../assets/chart-revenue-projections.png) (Illustrative)
 
 The following are **hypothetical scenarios** to illustrate how the revenue model scales:
 
@@ -96,8 +117,9 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax (10% total) | $10,000 | $300,000 |
-| Raffle Pass Sales | $2,000 | $60,000 |
+| Trading Tax → Jackpot (4%) | $8,000 | $240,000 |
+| Trading Tax → Team (1%) | $2,000 | $60,000 |
+| Raffle Ticket Sales | $2,000 | $60,000 |
 | Treasury Yield (on $500K) | ~$70 | ~$2,100 |
 | **Total** | **$12,070** | **$362,100** |
 
@@ -105,8 +127,9 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax | $100,000 | $3,000,000 |
-| Raffle Pass Sales | $20,000 | $600,000 |
+| Trading Tax → Jackpot (4%) | $80,000 | $2,400,000 |
+| Trading Tax → Team (1%) | $20,000 | $600,000 |
+| Raffle Ticket Sales | $20,000 | $600,000 |
 | Treasury Yield (on $5M) | ~$700 | ~$21,000 |
 | **Total** | **$120,700** | **$3,621,000** |
 
@@ -114,8 +137,9 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 
 | Source | Daily Revenue | Monthly Revenue |
 | --- | --- | --- |
-| Trading Tax | $500,000 | $15,000,000 |
-| Raffle Pass Sales | $100,000 | $3,000,000 |
+| Trading Tax → Jackpot (4%) | $400,000 | $12,000,000 |
+| Trading Tax → Team (1%) | $100,000 | $3,000,000 |
+| Raffle Ticket Sales | $100,000 | $3,000,000 |
 | Treasury Yield (on $25M) | ~$3,500 | ~$105,000 |
 | **Total** | **$603,500** | **$18,105,000** |
 
@@ -126,16 +150,17 @@ The following are **hypothetical scenarios** to illustrate how the revenue model
 ### Why This Model Is Sustainable
 
 1. **No emissions** — Revenue funds rewards, not token printing
-2. **Multiple streams** — Not dependent on any single source
+2. **Separated streams** — Jackpot and Treasury operate independently
 3. **Treasury yield** — Provides baseline revenue even at zero volume
-4. **Compounding LP** — Liquidity deepens over time, reducing slippage, attracting more volume
-5. **Buyback pressure** — 10% of pass sales continuously buys JACPOT, supporting price
+4. **Compounding LP** — Liquidity deepens over time, reducing slippage
+5. **Buyback pressure** — Jackpot distributions include LP & Buyback allocation
+6. **Viral marketing** — Small wins require X sharing, driving organic growth at zero cost
 
 ### Risk Factors
 
 | Risk | Mitigation |
 | --- | --- |
-| Volume decline | Pressure Mode + Drought Bonuses + Hype Vault |
+| Volume decline | Pressure Mode + growing pot attracts more participants |
 | DeFi yield compression | Diversified protocol deployment + RWA exposure |
 | Smart contract exploit | Audits + bug bounty + insurance |
 | Regulatory action | No securities, no gambling classification (see [Risks](../risks-and-disclaimers.md)) |

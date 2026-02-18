@@ -16,12 +16,13 @@ At its core, JACPOT is built around one simple idea:
 
 ## How It Works (30-Second Summary)
 
-1. **Buy the token** — A 5% tax on every buy and sell is collected in USDC and flows into the **Jackpot Pot**.
+1. **Buy the token** — A 5% tax on every buy and sell is collected in USDC — 4% flows into the **Jackpot Pot** and 1% goes to the **Team**.
 2. **Stake your tokens** — Staking earns you **Luck**, a non-transferable on-chain score that multiplies your raffle odds.
 3. **Engage daily** — Complete missions and claim Mystery Crates to earn **Luck Shards** that further boost your score.
-4. **Buy Raffle Passes** — NFT-based tickets that enter you into the jackpot draw.
-5. **Win the Jackpot** — Drawn via Chainlink VRF (provably fair). Your Luck Score multiplies your chances.
-6. **Repeat** — The pot refills, your Luck compounds, and the cycle continues.
+4. **Buy raffle tickets** — Simple on-chain entries purchased with USDC that put you in the daily draws.
+5. **Win daily** — Every day, 25 Small Win winners are selected. If the jackpot threshold is met, a main Jackpot winner is drawn too — all via Chainlink VRF.
+6. **Share to claim** — Small Win winners share their win on X (Twitter) to claim their prize, creating organic viral marketing.
+7. **Repeat** — The pot refills daily, your Luck compounds, and the cycle continues.
 
 ## What Makes JACPOT Different?
 
@@ -30,29 +31,32 @@ At its core, JACPOT is built around one simple idea:
 | Stake tokens → earn more tokens (inflation) | Stake tokens → earn Luck (probability, zero inflation) |
 | Passive holding rewarded | Active engagement rewarded |
 | Rewards funded by emissions | Rewards funded by real revenue (tax + treasury yield) |
-| No reason to return daily | Daily missions, crates, and streaks create habit loops |
+| No reason to return daily | Daily missions, crates, streaks, and 25 daily winners create habit loops |
 | Low volume = project dies | Low volume = Pressure Mode builds bigger jackpots |
+| Weekly or monthly draws | **Daily draws** — 25 winners every single day |
 
 ## The Ecosystem at a Glance
 
 ```
 JACPOT Ecosystem
 ├── Token (ERC-20 with 5/5% tax)
-│   └── Tax collected in USDC → Jackpot Pot
+│   └── Tax collected in USDC → 4% Jackpot Pot, 1% Team
 ├── Luck Staking Engine
 │   ├── Stake tokens → accumulate Luck
 │   ├── Luck Decay on unstake/sell
 │   └── Luck Tiers (Bronze → Legendary)
-├── Jackpot System
-│   ├── Raffle Passes (NFTs)
-│   ├── Chainlink VRF draws
+├── Two-Tier Daily Draw System
+│   ├── 25 Daily Small Wins (share on X to claim)
+│   ├── Conditional Jackpot Draw
+│   ├── Chainlink VRF (provably fair)
 │   └── Pressure Mode (low volume accumulation)
 ├── Micro-Loot System
 │   ├── Daily Missions
 │   ├── Mystery Crates
 │   └── Luck Shards
-├── Treasury
+├── Treasury (funded by ticket sales)
 │   ├── On-chain DeFi yield
+│   ├── Staker USDC rewards
 │   ├── Hype Vault (marketing fund)
 │   └── Drought Bonuses
 └── Community

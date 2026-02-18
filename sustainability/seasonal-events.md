@@ -1,120 +1,140 @@
 ---
-description: Scheduled events and community quests that create predictable hype cycles
+description: Limited-time events that drive engagement spikes and community excitement
 ---
 
-# Seasonal Events & Community Quests
+# Seasonal Events
 
-## Seasonal Events
+## Overview
 
-Seasonal Events are **pre-scheduled, calendar-based events** that create predictable hype cycles independent of organic trading volume.
+Seasonal Events are **limited-time campaigns** that inject fresh excitement into the JACPOT ecosystem. They provide bonus rewards, unique challenges, and special draw mechanics that drive engagement spikes and attract new users.
 
-### Event Calendar
+> **Design Philosophy:** Seasonal Events create urgency and novelty — two powerful psychological drivers that complement the steady daily engagement loop.
 
-| Event | Frequency | Description |
+---
+
+## Event Types
+
+### 🎄 Holiday Events
+Timed around major holidays and cultural moments:
+
+| Event | Timing | Theme |
 | --- | --- | --- |
-| 🎰 **Weekly Draw** | Every Friday 20:00 UTC | Standard jackpot draw for all pass holders |
-| 🎯 **Mini Draw** | Every Wednesday 20:00 UTC | Smaller pot, Silver+ tier stakers only |
-| 🌟 **Monthly Mega Draw** | 1st of each month | Boosted pot with treasury contribution |
-| 🏆 **Quarterly Championship** | Every 3 months | Largest regular draw + special NFT passes |
-| 🎂 **Anniversary Jackpot** | Yearly | Biggest draw of the year + commemorative NFTs |
-| 🎄 **Holiday Specials** | Major holidays | Themed events with bonus Luck Shards and special crates |
+| **New Year's Mega Draw** | Dec 31 – Jan 7 | Massive bonus pot + double Luck Shards |
+| **Valentine's Luck** | Feb 10–16 | Paired draws (2 winners per jackpot) |
+| **Summer Jackpot** | Jul 1–14 | Extended event with daily bonus crates |
+| **Halloween Crates** | Oct 25–31 | Special themed crates with exclusive rewards |
+| **Black Friday Frenzy** | Nov 28–30 | Discounted ticket bundles + triple Shards |
 
-### Monthly Mega Draw Details
+### 🏆 Community Challenges
+Collaborative goals that unite the community:
 
-- Treasury contributes a **bonus injection** to the pot (funded by yield)
-- Special **Monthly Pass** NFTs available (limited edition art)
-- All Luck Shards earned during the month receive a **1.5x bonus** for this draw
-- Results announced with fanfare — winner spotlight, social media campaign
-
-### Quarterly Championship
-
-- The **largest regular draw** of the quarter
-- Special **Championship Pass** NFTs with unique art (collectible even after burning)
-- Top 10 Luck Score holders receive **free Championship Pass entries**
-- Live-streamed draw event on Twitter Spaces / Discord
-- Winner receives prize + **"Champion" NFT badge** (soulbound)
-
-### Anniversary Jackpot
-
-- Celebrates the protocol's launch anniversary
-- Treasury makes its **largest annual contribution** to the pot
-- Special **Anniversary Edition** Raffle Passes (highest collectible value)
-- Week-long celebration with daily bonus missions and boosted crate drops
-- Multiple winners possible (top prize + runner-up prizes)
-
-## Community Quests
-
-Community Quests are **collective goals** that the entire community works toward together. They activate during slow periods or as part of seasonal events.
-
-### How Quests Work
-
-1. A quest is **announced** with a clear goal and reward
-2. The community **collaborates** to achieve the goal
-3. Progress is tracked **on-chain** and displayed on the dashboard
-4. When the goal is met, **all participants** receive the reward
-
-### Quest Examples
-
-| Quest | Goal | Reward |
+| Challenge Type | Mechanic | Reward |
 | --- | --- | --- |
-| 🚀 **Growth Quest** | 100 new wallets stake JACPOT this week | All stakers get 5 bonus Luck Shards |
-| 💰 **Volume Quest** | Reach $500K daily volume for 3 consecutive days | Bonus draw unlocked with treasury-funded pot |
-| 🤝 **Referral Quest** | 200 new referrals this month | Top 10 referrers get free Legendary Raffle Passes |
-| 🔒 **Staking Quest** | Total staked reaches 3 tokens | Everyone's Luck Score gets 1.5x boost for one week |
-| 🐦 **Social Quest** | JACPOT trends on Twitter/X | Mystery Crate drop rates doubled for 48 hours |
+| **Volume Target** | Community hits a collective trading volume goal | Bonus pot injection for all participants |
+| **Ticket Marathon** | Total tickets sold reaches milestone | Extra Small Win winners (50 instead of 25) |
+| **Streak Challenge** | X% of stakers maintain 30-day streaks | Community-wide Luck Boost (24h) |
+| **Referral Sprint** | New wallet onboarding competition | Leaderboard prizes for top referrers |
 
-### Quest Tiers
+### ⚔️ Competitive Seasons
+Ranked periods with leaderboard rewards:
 
-Quests have escalating difficulty and rewards:
+| Season Length | Mechanic | Prizes |
+| --- | --- | --- |
+| 4 weeks | Luck Score leaderboard ranking | Top 10: USDC prizes + permanent Luck bonus |
+| 4 weeks | Mission completion leaderboard | Top 25: Premium crates + bonus entries |
+| 4 weeks | Ticket purchase leaderboard | Top 50: Luck Shards + exclusive badges |
+
+---
+
+## Event Mechanics
+
+### Bonus Modifiers
+During seasonal events, the protocol can activate temporary modifiers:
+
+| Modifier | Effect | Duration |
+| --- | --- | --- |
+| **Double Shards** | 2x Luck Shard earnings from all sources | Event period |
+| **Triple Shards** | 3x Luck Shard earnings | Short burst (24–48h) |
+| **Bonus Crates** | Extra daily crate with improved odds | Event period |
+| **Extra Small Wins** | 50 daily winners instead of 25 | Event period |
+| **Luck Boost** | 1.5x Luck Score for all stakers | Event period |
+| **Pot Injection** | Treasury bonus added to Jackpot Pot | One-time |
+
+### Event-Exclusive Rewards
+
+| Reward | Description |
+| --- | --- |
+| 🏅 **Event Badges** | On-chain achievement markers visible on your profile |
+| ⚡ **Bonus Luck Shards** | Extra shards only available during the event |
+| 🎁 **Themed Crates** | Special crates with unique reward tables |
+| 🎟️ **Bonus Entries** | Free raffle ticket entries for event participants |
+| 💰 **USDC Prizes** | Direct USDC rewards for leaderboard winners |
+
+---
+
+## Event Calendar Strategy
+
+Events are strategically scheduled to maintain engagement throughout the year:
 
 ```
-Tier 1 (Easy)     → Small reward, achievable in 1-2 days
-Tier 2 (Medium)   → Moderate reward, achievable in 1 week
-Tier 3 (Hard)     → Large reward, achievable in 2-4 weeks
-Tier 4 (Epic)     → Massive reward, community-wide effort over 1 month
+Q1: New Year's Mega Draw → Valentine's Luck → Spring Season
+Q2: Easter Egg Hunt → Summer Kickoff → Competitive Season 1
+Q3: Summer Jackpot → Back-to-School → Competitive Season 2
+Q4: Halloween Crates → Black Friday Frenzy → Holiday Mega Draw
 ```
 
-### Quest Governance
+### Frequency Guidelines
+- **Major Events:** 1 per quarter (1–2 weeks each)
+- **Mini Events:** 1–2 per month (2–3 days each)
+- **Competitive Seasons:** 2 per year (4 weeks each)
+- **Gap between events:** Minimum 1 week of normal operations
 
-- **Diamond+ stakers** can propose new quests
-- Community votes on which quests to activate
-- Quest parameters (goals, rewards, duration) are set by governance
-- The team can also propose quests during critical periods
+> 💡 **Why gaps matter:** Constant events create fatigue. Strategic gaps make each event feel special and create anticipation.
 
-## Leaderboard Seasons
+---
 
-### Monthly Leaderboard
+## Event Funding
 
-A competitive leaderboard tracks the **top Luck Score earners** each month:
+Seasonal events are funded through multiple sources:
 
-| Rank | Reward |
+| Source | Contribution |
 | --- | --- |
-| 🥇 #1 | 1 Free Mythic Raffle Pass + "Monthly Champion" badge |
-| 🥈 #2-3 | 1 Free Legendary Raffle Pass |
-| 🥉 #4-10 | 1 Free Epic Raffle Pass |
-| Top 50 | 10 Bonus Luck Shards |
-| Top 100 | 5 Bonus Luck Shards |
+| **Hype Vault** | Primary funding for event bonuses and pot injections |
+| **Treasury Reserve** | Supplementary funding for major events |
+| **Increased Revenue** | Events naturally drive higher volume and ticket sales |
+| **Sponsor Partnerships** | Partner protocols may co-fund events for cross-promotion |
 
-### Season Points
+### Budget Allocation (Per Major Event)
 
-- Each month's leaderboard position earns **Season Points**
-- Season Points accumulate over a **3-month season**
-- At the end of each season, the top Season Point holders receive:
-  - Exclusive **Season Champion** NFT (soulbound)
-  - Permanent **0.5x Luck multiplier bonus** for the next season
-  - Recognition on the JACPOT Hall of Fame
-
-## Event Marketing Strategy
-
-Each event type serves a specific marketing purpose:
-
-| Event | Marketing Purpose |
+| Category | Allocation |
 | --- | --- |
-| Weekly Draw | Consistent engagement, routine |
-| Mini Draw | Reward loyal stakers, tier incentive |
-| Monthly Mega | Content creation moment, social buzz |
-| Quarterly Championship | Major marketing push, influencer partnerships |
-| Anniversary | Biggest annual campaign, media coverage |
-| Community Quests | Organic growth, community-driven marketing |
+| Bonus pot injection | 40% |
+| Leaderboard prizes | 25% |
+| Marketing & promotion | 20% |
+| Themed crate rewards | 15% |
 
-> The event calendar ensures there is **always something happening** — even during quiet market periods.
+---
+
+## Impact on Core Systems
+
+During seasonal events, core systems continue operating normally with event bonuses layered on top:
+
+| System | Normal Operation | During Events |
+| --- | --- | --- |
+| **Daily Small Wins** | 25 winners/day | 25–50 winners/day |
+| **Jackpot Draw** | Conditional trigger | Same rules + possible pot injection |
+| **Luck Staking** | Standard accumulation | Same + possible Luck Boost modifier |
+| **Mystery Crates** | 1 per day | 1–2 per day + themed crates |
+| **Daily Missions** | Standard missions | Standard + event-specific bonus missions |
+| **Luck Shards** | Standard earnings | 2–3x multiplier during events |
+
+---
+
+## Key Takeaways
+
+- ✅ **Seasonal Events** create urgency, novelty, and engagement spikes
+- ✅ **Multiple event types** (holidays, challenges, competitive seasons) keep the experience fresh
+- ✅ **Funded by Hype Vault and Treasury** — no inflationary token emissions
+- ✅ **Core systems continue normally** — events are additive bonuses, not replacements
+- ✅ **Strategic scheduling** ensures year-round excitement with healthy gaps
+- ✅ **Community challenges** unite users around shared goals, strengthening the ecosystem

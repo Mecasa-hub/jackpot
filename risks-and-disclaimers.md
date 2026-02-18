@@ -61,7 +61,7 @@ description: Important risks, disclaimers, and legal considerations
 | **Jurisdictional restrictions** | Some jurisdictions may prohibit participation |
 | **Evolving regulations** | Crypto regulations are rapidly changing worldwide |
 
-> **JACPOT is designed to minimize regulatory risk through careful structural choices (consumable NFT passes, no yield-bearing bonds, provably fair mechanics). However, regulatory outcomes cannot be predicted or guaranteed.**
+> **JACPOT is designed to minimize regulatory risk through careful structural choices (simple on-chain raffle tickets, no inflationary emissions, provably fair mechanics). However, regulatory outcomes cannot be predicted or guaranteed.**
 
 ### 6. Operational Risk
 

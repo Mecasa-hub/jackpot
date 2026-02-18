@@ -1,62 +1,73 @@
 ---
-description: The JACPOT token — mechanics, utility, and design
+description: JACPOT Token — The Key to the Ecosystem
 ---
 
 # Token Overview
 
-## Basic Information
+## JACPOT Token (ERC-20)
 
-| Property | Value |
+The **JACPOT** token is the native utility token of the JACPOT ecosystem, deployed on the **Base** blockchain. It serves as the primary access key to all ecosystem features — from Luck Staking and raffle participation to tier progression and governance.
+
+## Token Specifications
+
+| Parameter | Value |
 | --- | --- |
 | **Token Name** | JACPOT |
-| **Ticker** | JACPOT |
+| **Symbol** | JACPOT |
+| **Chain** | Base (Ethereum L2) |
 | **Standard** | ERC-20 |
-| **Chain** | Base |
-| **Total Supply** | 1,000,000,000 |
-| **Buy Tax** | 5% (collected in USDC) |
-| **Sell Tax** | 5% (collected in USDC) |
-| **Transfer Tax** | 0% (wallet-to-wallet) |
+| **Total Supply** | 1,000,000,000 (1 Billion) |
+| **Decimals** | 18 |
+| **Tax** | 5% Buy / 5% Sell |
+| **Tax Collection** | USDC (auto-swapped) |
+| **Minting** | Disabled — fixed supply, no inflation |
 
-## Token Utility
+## Core Utility
 
-The JACPOT token is **not** a passive investment vehicle. It is the **key** to the entire JACPOT ecosystem. Here's what it unlocks:
+The JACPOT token provides the following utilities within the ecosystem:
 
-### 1. Luck Staking
-Stake JACPOT to accumulate **Luck** — the non-transferable score that multiplies your raffle odds. More tokens staked = faster Luck accumulation.
+### 1. 🍀 Luck Staking
+- Stake JACPOT tokens to accumulate a **Luck Score**
+- Luck is non-transferable and directly multiplies your raffle odds
+- Unstaking incurs a **50% Luck penalty** to discourage short-term speculation
+- Zero inflation — staking does not mint new tokens
 
-### 2. Mystery Crate Access
-Only JACPOT stakers can claim daily Mystery Crates. No stake = no crate.
+### 2. 🎟️ Raffle Access
+- Token holders gain access to the daily draw ecosystem
+- Higher Luck Scores from staking = better odds in every draw
+- Tier progression unlocks exclusive draw pools and bonus entries
 
-### 3. Tier Unlocks
-Your Luck Score (driven by staking) unlocks tiers from Bronze to Legendary, each with escalating benefits including exclusive draws, better crate drop rates, and higher odds multipliers.
+### 3. 🏆 Tier Progression
+- Staking amount and duration determine your tier (Bronze → Legendary)
+- Higher tiers unlock exclusive benefits: better crate odds, exclusive draws, governance rights
+- Tier status is visible on the community leaderboard
 
-### 4. Mission Eligibility
-Daily Missions require holding or staking JACPOT. You can't earn Luck Shards without skin in the game.
+### 4. 🗡️ Daily Engagement
+- Token stakers unlock Daily Missions and Mystery Crates
+- Earn Luck Shards through daily engagement to further boost your Luck Score
+- Streak multipliers reward consecutive daily participation
 
-### 5. Governance (Diamond+ Tier)
-High-tier stakers gain voting rights on treasury deployment, seasonal event parameters, and protocol upgrades.
+### 5. 🔥 Deflationary Pressure
+- 50% Luck penalty on unstaking discourages selling
+- Long-term staking locks supply, reducing circulating tokens
+- Active engagement creates natural holding incentives beyond speculation
+
+## Revenue Streams
+
+The JACPOT token generates two independent revenue streams for the ecosystem:
+
+| Stream | Source | Destination |
+| --- | --- | --- |
+| **Trading Tax** | 5% on every buy/sell | 4% → Jackpot Pot, 1% → Team (deployer-adjustable) |
+| **Ticket Sales** | Raffle ticket purchases (USDC) | Treasury → Staker rewards, operations, Hype Vault |
 
 ## Why Hold JACPOT?
 
-| Reason | Mechanism |
+| Benefit | Description |
 | --- | --- |
-| **Better odds** | Staking = Luck = higher win probability |
-| **Daily rewards** | Mystery Crates and missions (stakers only) |
-| **Compounding advantage** | Longer stake = exponentially more Luck |
-| **Unstake penalty** | Luck Decay makes selling costly in terms of accumulated advantage |
-| **Exclusive access** | Higher tiers unlock exclusive draws and features |
-| **Buyback pressure** | 10% of raffle pass sales buy back JACPOT from the market |
-
-## Tax Breakdown
-
-Every buy and sell of JACPOT incurs a **5% tax**, collected entirely in **USDC**:
-
-```
-5% Tax (USDC)
-    │
-    └──► 100% → Jackpot Pot
-```
-
-The tax is simple and transparent. Every cent goes to the jackpot. No hidden allocations, no team cuts from tax.
-
-> See [Tax Mechanics](tax-mechanics.md) for detailed implementation.
+| **Luck Accumulation** | Every day staked increases your Luck Score and winning odds |
+| **USDC Rewards** | Stakers receive a share of ticket revenue and treasury yield in USDC |
+| **Daily Winners** | 25 Small Win winners are drawn every day — active stakers have the best odds |
+| **Tier Perks** | Higher tiers unlock exclusive draws, better crate odds, and governance |
+| **Compounding Advantage** | The longer you hold and engage, the harder it is for newcomers to catch up |
+| **No Inflation** | Your share of supply never gets diluted — fixed supply forever |

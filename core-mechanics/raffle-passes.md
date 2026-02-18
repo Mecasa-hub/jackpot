@@ -1,92 +1,139 @@
 ---
-description: Your ticket to the jackpot — NFT-based raffle entries with tiered rarity
+description: Simple on-chain raffle tickets — your entry to every daily draw
 ---
 
-# Raffle Passes
+# Raffle Tickets
 
-## What Are Raffle Passes?
+## Overview
 
-Raffle Passes are **NFT-based entries** into the JACPOT jackpot draws. Each pass represents one entry into the raffle, with your odds further multiplied by your Luck Score.
+Raffle tickets are **simple on-chain entries** that grant participation in JACPOT's daily draws. There are no NFTs, no complex mechanics — just buy a ticket and you're in.
 
-Raffle Passes are:
-- ✅ **Purchasable** with USDC
-- ✅ **NFTs** (ERC-1155) with visual art and rarity tiers
-- ✅ **Consumable** — burned after the draw they're entered into
-- ✅ **Tradeable** on secondary NFT markets before the draw
-- ❌ **Not securities** — they are one-time raffle entries, not yield-bearing instruments
+> **Design Philosophy:** Raffle tickets are intentionally simple. The complexity and competitive advantage come from Luck Staking, not from the ticket itself.
 
-## Rarity Tiers
+## How Tickets Work
 
-![Raffle Pass Tier Comparison](../assets/chart-raffle-tiers.png)
+### Purchase
 
-Raffle Passes come in **five rarity tiers**, each with different entry multipliers:
+| Parameter | Value |
+| --- | --- |
+| **Currency** | USDC |
+| **Price** | Fixed per ticket (set by protocol) |
+| **Validity** | Current day's draw only |
+| **Per-Wallet Cap** | Maximum tickets per wallet per day (anti-whale) |
+| **Purchase Method** | On-chain transaction via JACPOT DApp |
 
-| Tier | Price (USDC) | Entries per Pass | Visual |
-| --- | --- | --- | --- |
-| 🟢 **Common** | $5 | 1 entry | Basic design |
-| 🔵 **Rare** | $20 | 5 entries | Animated border |
-| 🟣 **Epic** | $75 | 20 entries | Holographic effect |
-| 🟡 **Legendary** | $250 | 75 entries | Full animation + sound |
-| 🔴 **Mythic** | $1,000 | 350 entries | Unique 1-of-1 art + guaranteed Mini Draw entry |
+### Ticket Lifecycle
 
-> Higher tiers offer a **slight discount per entry** compared to buying multiple Common passes, incentivizing larger purchases.
+```
+Buy Ticket → Entered in Today's Draws → Draw Occurs → Ticket Expires
+     │                                        │
+     │                                        ├── Win → Claim Prize
+     │                                        └── Lose → Ticket Consumed
+     │
+     └── Revenue → Treasury
+```
 
-### Entry Value Comparison
+- Tickets are **single-use** — each ticket is valid for one day's draws only
+- Tickets are **non-transferable** — they cannot be sold or traded
+- Unused tickets **expire at 00:00 UTC** if not entered in a draw
+- All ticket revenue flows to the **Treasury** (not the Jackpot Pot)
 
-| Tier | Price | Entries | Cost per Entry |
-| --- | --- | --- | --- |
-| Common | $5 | 1 | $5.00 |
-| Rare | $20 | 5 | $4.00 |
-| Epic | $75 | 20 | $3.75 |
-| Legendary | $250 | 75 | $3.33 |
-| Mythic | $1,000 | 350 | $2.86 |
+## Two-Tier Daily Draw
 
-## How to Get Raffle Passes
+Every ticket purchased enters you into **both** daily draw tiers:
 
-### 1. Purchase (Primary)
-Buy directly from the JACPOT dApp using USDC. Passes are minted on purchase.
+### Tier 1: Small Wins (Guaranteed Daily)
 
-### 2. Mystery Crates (Free)
-Epic-tier Mystery Crates have a 12% chance of containing a free Common Raffle Pass.
+| Parameter | Value |
+| --- | --- |
+| **Winners Per Day** | 25 |
+| **Funding** | 10% of daily ticket sales |
+| **Selection** | Chainlink VRF (random, Luck-weighted) |
+| **Claim Requirement** | Winner must share on X (Twitter) to claim |
 
-### 3. Community Quests (Earned)
-Completing collective community goals can reward participants with bonus passes.
+Small Wins are distributed across four prize categories:
 
-### 4. Secondary Market (Traded)
-Buy from other users on NFT marketplaces before the draw deadline.
+| Category | Winners | Share of Small Win Pool |
+| --- | --- | --- |
+| 🥇 **Top Prize** | 1 | 50% |
+| 🥈 **Runner Up** | 4 | 35% |
+| 🥉 **Lucky Pick** | 10 | 10% |
+| 🎁 **Micro Win** | 10 | 5% |
 
-## Revenue Distribution from Pass Sales
+### Tier 2: Jackpot Draw (Conditional)
+
+| Parameter | Value |
+| --- | --- |
+| **Winners** | 1 (if triggered) |
+| **Funding** | 4% of the 5% buy/sell trading tax |
+| **Trigger** | Internal protocol parameters met |
+| **Selection** | Chainlink VRF (Luck-weighted) |
+
+The Jackpot draw only triggers when internal conditions are satisfied. If not triggered:
+- **85%** of the pot rolls over to the next day (growing the jackpot)
+- **15%** is distributed to JACPOT token stakers as USDC rewards
+
+## Luck-Weighted Selection
+
+Tickets are **not equal**. Your Luck Score from staking multiplies the weight of each ticket:
+
+```
+Your Effective Entries = Tickets Purchased × Luck Score
+```
+
+### Example
+
+| Player | Tickets | Luck Score | Effective Entries | Relative Odds |
+| --- | --- | --- | --- | --- |
+| Alice | 3 | 5,000 | 15,000 | 55.6% |
+| Bob | 5 | 500 | 2,500 | 9.3% |
+| Carol | 1 | 8,000 | 8,000 | 29.6% |
+| Dave | 5 | 100 | 500 | 1.9% |
+| Eve | 10 | 100 | 1,000 | 3.7% |
+
+> **Key Insight:** Carol with 1 ticket and high Luck outperforms Bob and Dave with 5 tickets each. Luck Staking is the real competitive advantage.
+
+## Revenue Flow
+
+All ticket sale revenue flows to the **Treasury**, which allocates it as follows:
 
 | Allocation | Percentage | Purpose |
 | --- | --- | --- |
-| **Jackpot Pot** | 90% | Directly grows the prize pool |
-| **LP & Buyback** | 10% | Buys back JACPOT and adds to liquidity pool |
+| 🎁 **Small Wins Pool** | 10% | Funds the 25 daily Small Win prizes |
+| 🍀 **Staker Rewards** | 5% | USDC rewards distributed to JACPOT stakers |
+| 🏦 **Treasury Reserve** | 5% | Operations, development, DeFi yield deployment |
+| 📣 **Hype Vault** | Variable | Counter-cyclical marketing fund |
 
-## Pass Lifecycle
+> **Important:** The Jackpot Pot is funded by **4% of the 5% buy/sell trading tax** (the remaining 1% goes to the Team) — not by ticket sales. These are two independent revenue streams.
 
-```
-Mint/Purchase → Hold (tradeable) → Draw Snapshot → 
-Draw Executed → Pass Burned (consumed)
-```
+## Anti-Whale Protections
 
-1. **Minted** when purchased or earned
-2. **Active** until the next draw — can be traded on secondary markets
-3. **Snapshotted** at draw time — ownership locked
-4. **Burned** after the draw — win or lose, the pass is consumed
-5. **New passes** must be purchased for the next draw
+| Measure | Description |
+| --- | --- |
+| **Per-Wallet Daily Cap** | Maximum number of tickets any single wallet can purchase per day |
+| **Luck Weighting** | Long-term small stakers can outperform short-term whales |
+| **Tiered Draw Pools** | Some draws are exclusive to specific tiers, protecting smaller holders |
+| **No Bulk Discounts** | Every ticket costs the same regardless of quantity |
 
-> This creates a **recurring revenue model** — users must buy new passes for each draw cycle.
+## Claiming Prizes
 
-## Pass Validity
+### Small Wins
+1. Winner is selected via Chainlink VRF
+2. Winner receives notification in the DApp
+3. Winner **must share their win on X (Twitter)** using the provided template
+4. Upon verification of the post, prize is released to the winner's wallet
+5. Unclaimed prizes (no X post within 48 hours) roll back into the Small Wins pool
 
-- Passes are valid for **one draw cycle** (typically one week)
-- Unused passes from a missed draw are **automatically entered** into the next available draw
-- Passes cannot be refunded after purchase
-- Passes purchased after the snapshot deadline are entered into the following draw
+### Jackpot
+1. Winner is selected via Chainlink VRF
+2. Prize is automatically sent to the winner's wallet
+3. No social sharing requirement for jackpot wins (but encouraged)
 
-## Collectibility
+## Key Takeaways
 
-While passes are consumed after draws, the **art and metadata** are preserved:
-- Winners receive a special **"Winner's Trophy" NFT** commemorating their win
-- Mythic passes that don't win receive a **"Mythic Participant" badge** (soulbound)
-- All pass art is generated procedurally with unique traits
+- ✅ **Simple on-chain tickets** — no NFTs, no complexity
+- ✅ **Daily draws** — 25 guaranteed winners every day + conditional jackpot
+- ✅ **Luck-weighted** — staking gives you a massive competitive advantage
+- ✅ **Anti-whale** — per-wallet caps and Luck weighting level the playing field
+- ✅ **Viral marketing** — Small Win winners share on X to claim, driving organic growth
+- ✅ **Transparent revenue** — ticket sales fund treasury; trading tax funds jackpot

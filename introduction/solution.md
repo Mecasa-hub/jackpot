@@ -1,86 +1,116 @@
 ---
-description: How JACPOT solves these problems
+description: How JACPOT solves the engagement and sustainability problem
 ---
 
-# Our Solution
+# The JACPOT Solution
 
-## The Engage-to-Win Model
+## A New Paradigm: Engage-to-Win
 
-JACPOT introduces a fundamentally new DeFi primitive: **Luck as a Utility.**
+JACPOT introduces a fundamentally different approach to DeFi incentives. Instead of paying users to hold (which creates sell pressure), JACPOT **rewards users for engaging** — and the reward is **better odds of winning real prizes**.
 
-Instead of paying users to hold (inflationary), or giving everyone equal odds (uninspiring), JACPOT creates a system where **your probability of winning is directly proportional to your engagement level**.
+This creates a virtuous cycle:
 
-### The Three Pillars
+```
+Engage More → Luck Grows → Better Odds → Win More → Tell Friends → More Volume → Bigger Pots → Engage More
+```
 
-#### Pillar 1: Real Revenue, Not Emissions
+## The Five Pillars
 
-Every dollar in the JACPOT ecosystem comes from **real sources**:
+### 1. 🎲 Two-Tier Daily Draw System
 
-| Revenue Source | Feeds Into |
+Every day, the protocol runs two types of draws:
+
+- **25 Small Wins** — Guaranteed daily winners selected from all ticket holders. Winners must share on X (Twitter) to claim, creating organic viral marketing.
+- **Conditional Jackpot** — The main prize draw triggers only when internal parameters are met, preventing the pot from being drained during low-participation periods.
+
+All draws use **Chainlink VRF** for provably fair, tamper-proof randomness.
+
+### 2. 🍀 Luck Staking Engine
+
+Traditional staking pays you tokens. JACPOT staking pays you **probability**.
+
+- Stake JACPOT tokens to accumulate a **Luck Score**
+- Luck is **non-transferable** and **non-tradeable** — it cannot be bought, only earned
+- Your Luck Score directly **multiplies** your odds in every draw
+- Unstaking incurs a **50% Luck penalty**, discouraging short-term speculation
+- Zero inflation — no new tokens are ever minted
+
+### 3. 🗡️ Daily Engagement Layer
+
+To keep users coming back every day:
+
+- **Daily Missions** — Simple on-chain tasks (claim crate, check leaderboard, maintain streak) that reward Luck Shards
+- **Mystery Crates** — Daily claimable rewards with tiered rarity (Common → Legendary)
+- **Luck Shards** — Bonus points that boost your Luck Score through multiplicative bonuses or can be spent on entries and boosts
+- **Streak Multipliers** — Consecutive daily engagement compounds your Luck growth
+
+### 4. 🏦 Sustainable Treasury Model
+
+JACPOT's revenue model is built on **two independent streams**:
+
+| Revenue Stream | Source | Destination |
+| --- | --- | --- |
+| **Trading Tax** | 5% buy/sell tax collected in USDC | 4% → Jackpot Pot, 1% → Team (deployer-adjustable) |
+| **Ticket Sales** | Raffle ticket purchases in USDC | Treasury (staker rewards, operations, Hype Vault) |
+
+The treasury deploys idle funds into **on-chain DeFi strategies** (Aave, Compound) to generate sustainable yield that funds:
+- USDC rewards for stakers
+- Drought bonuses during low-volume periods
+- Counter-cyclical marketing via the Hype Vault
+
+### 5. 🌡️ Self-Healing Mechanics
+
+When volume drops, most protocols die. JACPOT gets **stronger**:
+
+- **Pressure Mode** activates after 3 consecutive low-volume days
+- Standard jackpot draws pause while the pot continues to grow from taxes and treasury bonuses
+- After 14 days, a **forced Mega Draw** guarantees a winner
+- The Hype Vault automatically funds marketing campaigns during droughts
+- The result: low volume creates **anticipation**, not abandonment
+
+## Why This Works
+
+| Problem | JACPOT's Solution |
 | --- | --- |
-| 5% buy tax (USDC) | Jackpot Pot |
-| 5% sell tax (USDC) | Jackpot Pot |
-| Raffle Pass sales | LP + Buyback (10%) + Jackpot (90%) |
-| Treasury DeFi yield | Mystery Crate rewards + Hype Vault + Drought Bonuses |
+| Users dump after buying | Luck Staking penalizes selling (50% Luck loss) |
+| No reason to return daily | 25 daily winners + missions + crates + streaks |
+| Low volume kills projects | Pressure Mode builds bigger pots; Mega Draw guarantees payouts |
+| Whales dominate | Tier system and per-wallet caps level the playing field |
+| Unsustainable rewards | Zero inflation; rewards funded by real revenue |
+| No organic marketing | Winners must share on X to claim — built-in virality |
+| Trust issues | Chainlink VRF + on-chain treasury = full transparency |
 
-**Zero token emissions. Zero inflation. Every reward is backed by real revenue.**
-
-#### Pillar 2: Luck as the Core Utility
-
-Staking your tokens doesn't earn you more tokens. It earns you **Luck** — a non-transferable, non-tradeable on-chain score that:
-
-- Multiplies your odds in every raffle draw
-- Compounds over time (longer stake = exponentially more Luck)
-- Decays if you unstake or sell (creating sticky holding behavior)
-- Unlocks tiers with escalating benefits
-
-This is **not a giveaway**. Luck is access to probability. The actual prizes come from the revenue-funded jackpot.
-
-#### Pillar 3: Daily Engagement Loop
-
-The Micro-Loot System creates reasons to return every single day:
+## The Flywheel Effect
 
 ```
-Daily Login
-    ├── Claim Mystery Crate (stakers only)
-    ├── Complete 3 Daily Missions
-    │   ├── Hold Mission → Luck Shards
-    │   ├── Engage Mission → Luck Shards  
-    │   └── Social Mission → Luck Shards
-    └── Maintain Streak → Streak Multiplier
-        └── Streak boosts all Luck accumulation
+     ┌─────────────────────────────────────┐
+     │         Users Buy JACPOT            │
+     └──────────────┬──────────────────────┘
+                    │
+                    ▼
+     ┌──────────────────────────────┐
+     │  5% Tax → Jackpot Pot Grows  │
+     └──────────────┬───────────────┘
+                    │
+                    ▼
+     ┌──────────────────────────────┐
+     │  Bigger Pot → More Exciting  │
+     └──────────────┬───────────────┘
+                    │
+                    ▼
+     ┌──────────────────────────────┐
+     │  More Tickets Sold → Treasury│
+     └──────────────┬───────────────┘
+                    │
+                    ▼
+     ┌──────────────────────────────┐
+     │  25 Daily Winners Share on X │
+     └──────────────┬───────────────┘
+                    │
+                    ▼
+     ┌──────────────────────────────┐
+     │  Viral Growth → New Users    │
+     └──────────────┬───────────────┘
+                    │
+                    └──────► (Back to Top)
 ```
-
-### How the Pillars Work Together
-
-```
-Real Revenue (Tax + Yield)
-        │
-        ▼
-   Jackpot Pot ◄──── Raffle Pass Sales
-        │
-        ▼
-   Raffle Draw (Chainlink VRF)
-        │
-        ▼
-   Winner Selected
-   (Odds weighted by LUCK SCORE)
-        │
-        ▼
-   Luck Score = f(Staking, Time, Streaks, Missions)
-        │
-        ▼
-   ENGAGEMENT DRIVES EVERYTHING
-```
-
-### The Anti-Death-Spiral
-
-When volume drops, traditional projects die. JACPOT **thrives**:
-
-1. **Pressure Mode** activates — jackpot stops drawing, pot accumulates
-2. **Drought Bonuses** kick in — treasury tops up the pot
-3. **Hype Vault** deploys — automated marketing spend activates
-4. **Community Quests** launch — collective goals drive organic growth
-5. **Mega Draw** triggers — massive accumulated pot creates viral moment
-
-> Low volume doesn't kill JACPOT. It charges it up.
